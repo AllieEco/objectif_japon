@@ -232,6 +232,37 @@ class SavingsTracker {
     }
 }
 
+// Gestion de la navigation
+class Navigation {
+    constructor() {
+        this.currentSection = 'stats';
+        this.init();
+    }
+
+    init() {
+        const navButtons = document.querySelectorAll('.nav-button');
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const section = button.dataset.section;
+                this.switchSection(section);
+            });
+        });
+    }
+
+    switchSection(section) {
+        // Mettre à jour les boutons
+        document.querySelectorAll('.nav-button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        document.querySelector(`[data-section="${section}"]`).classList.add('active');
+        
+        this.currentSection = section;
+        
+        // Ici vous pouvez ajouter la logique pour changer le contenu
+        console.log(`Section active: ${section}`);
+    }
+}
+
 // Effets visuels supplémentaires
 class VisualEffects {
     constructor() {
@@ -286,6 +317,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialiser le tracker d'économies
     window.savingsTracker = new SavingsTracker();
+    
+    // Initialiser la navigation
+    const navigation = new Navigation();
     
     // Initialiser les effets visuels
     const visualEffects = new VisualEffects();
