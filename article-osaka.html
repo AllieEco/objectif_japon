@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osaka - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button" data-section="langue">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="article-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='voyage.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour au voyage</span>
+                        </button>
+                    </div>
+                    <div class="article-header">
+                        <h1 class="article-title">Osaka</h1>
+                        <div class="article-image-full">
+                            <img src="assets/osaka.jpg" alt="Osaka">
+                        </div>
+                    </div>
+                    
+                    <div class="article-body">
+                        <h2>Histoire et identité</h2>
+                        <p>Osaka, anciennement appelée Naniwa, est l'une des plus anciennes villes du Japon. Elle devient un centre commercial majeur dès le VIe siècle grâce à sa position stratégique à l'embouchure des rivières Yodo et Yamato. La ville moderne naît véritablement au XVIe siècle quand Toyotomi Hideyoshi y construit son château en 1583.</p>
+                        
+                        <p>Pendant l'ère d'Edo (1603-1868), Osaka gagne le surnom de "cuisine de la nation" (tenka no daidokoro) car elle centralise le commerce du riz pour tout le pays. Cette tradition marchande forge l'âme osakienne : pragmatique, directe et festive. Les habitants développent une culture unique du spectacle avec le bunraku (théâtre de marionnettes) et une gastronomie populaire qui perdure aujourd'hui.</p>
+                        
+                        <p>La ville compte aujourd'hui 2,7 millions d'habitants (19 millions dans l'agglomération), ce qui en fait la troisième métropole japonaise. Elle reste le cœur économique du Kansai et rivalise avec Tokyo pour l'innovation technologique et culinaire.</p>
+                        
+                        <h2>Géographie urbaine</h2>
+                        <p>Osaka s'organise autour de plusieurs quartiers distincts. <strong>Kita (北区)</strong> englobe les gares d'Osaka et Umeda, centre d'affaires et de shopping haut de gamme avec les grands magasins Hanshin, Daimaru et Hankyu. <strong>Minami (南区)</strong> regroupe Namba, Dotonbori et Shinsaibashi, cœur touristique et festif de la ville.</p>
+                        
+                        <p><strong>Sumiyoshi</strong> abrite le sanctuaire du même nom, l'un des plus anciens du Japon. <strong>Tennoji</strong> concentre les quartiers populaires et le parc Sumiyoshi. <strong>Nippombashi</strong> est le quartier électronique, équivalent d'Akihabara à Tokyo. <strong>Shinsekai</strong> conserve une ambiance rétro des années 1960 autour de la tour Tsutenkaku.</p>
+                        
+                        <p>Le château d'Osaka, reconstruit en 1931, trône au centre géographique de la ville dans un parc de 106 hectares. Les rivières et canaux quadrillent la ville, vestige de son passé de port fluvial.</p>
+                        
+                        <h2>Les incontournables</h2>
+                        
+                        <h3>Dotonbori</h3>
+                        <p>Cette avenue le long du canal Dotonbori-gawa constitue l'âme d'Osaka. Les enseignes géantes (crabe mécanique de Kani Doraku, homme qui court de Glico, poulpe géant) créent un spectacle visuel unique au monde. Le quartier s'anime particulièrement après 18h quand les néons s'allument et que les restaurants ouvrent leurs terrasses.</p>
+                        
+                        <p>Les ponts Dotonbori et Nipponbashi offrent les meilleures vues pour les photos. Le soir, une croisière sur le canal Dotonbori permet d'admirer les reflets des enseignes (prix 1 000 yen, durée 20 minutes).</p>
+                        
+                        <h3>Château d'Osaka</h3>
+                        <p>Reconstruit en béton armé en 1931 après l'incendie de 1868, le château abrite aujourd'hui un musée sur 8 étages retraçant l'histoire de Toyotomi Hideyoshi et de la ville. L'ascenseur mène au sommet pour une vue panoramique sur Osaka.</p>
+                        
+                        <p><strong>Horaires :</strong> 9h-17h (dernière entrée 16h30)<br>
+                        <strong>Tarif :</strong> 600 yen adulte, gratuit pour les moins de 15 ans<br>
+                        <strong>Meilleure période :</strong> printemps (sakura) et automne (momiji)</p>
+                        
+                        <h3>Sanctuaire Sumiyoshi Taisha</h3>
+                        <p>Fondé au IIIe siècle, ce sanctuaire dédié aux divinités marines présente une architecture purement japonaise (style sumiyoshi-zukuri) antérieure à l'influence bouddhiste. Les quatre bâtiments principaux sont classés Trésor national.</p>
+                        
+                        <p>Le pont Sorihashi, pont arqué vermillon de 20 mètres, symbolise la transition entre le monde terrestre et divin. Particulièrement fréquenté lors du Nouvel An (plus de 2 millions de visiteurs en 3 jours).</p>
+                        
+                        <h3>Shinsaibashi et Amerikamura</h3>
+                        <p>Shinsaibashi-suji est l'artère commerçante couverte de 600 mètres reliant Namba à Shinsaibashi. Elle concentre boutiques de mode, grands magasins et restaurants depuis 1634. <strong>Amerikamura</strong> (America Village) adjacent attire la jeunesse branchée avec ses boutiques de streetwear, disquaires et cafés alternatifs.</p>
+                        
+                        <h3>Kuromon Ichiba</h3>
+                        <p>Ce marché couvert de 600 mètres, surnommé "la cuisine d'Osaka", existe depuis 1902. Plus de 150 échoppes proposent produits frais, street food et spécialités locales. Particulièrement animé le matin entre 9h et 12h quand les restaurateurs viennent s'approvisionner.</p>
+                        
+                        <h2>Gastronomie osakienne</h2>
+                        <p>Osaka revendique l'invention de nombreuses spécialités japonaises populaires.</p>
+                        
+                        <h3>Takoyaki</h3>
+                        <p>Le takoyaki (boulettes de poulpe) naît ici dans les années 1930. Ces boules de pâte cuites dans des plaques spéciales se dégustent brûlantes, nappées de sauce takoyaki et mayonnaise. Prix habituel : 6 pièces pour 500-800 yen.</p>
+                        
+                        <h3>Okonomiyaki</h3>
+                        <p>L'okonomiyaki osakien diffère de la version d'Hiroshima par le mélange des ingrédients dans la pâte. Cette "pizza japonaise" aux choux, porc, fruits de mer ou autres garnitures se cuit sur plaque chauffante devant le client. Comptez 800-1 500 yen selon les ingrédients.</p>
+                        
+                        <h3>Kushikatsu</h3>
+                        <p>Le kushikatsu propose des brochettes panées et frites accompagnées d'une sauce spéciale. Règle d'or : ne jamais tremper deux fois la même brochette dans la sauce commune. Le quartier de Shinsekai en regorge, particulièrement autour de la rue Jan-jan Yokocho.</p>
+                        
+                        <h3>Autres spécialités</h3>
+                        <ul>
+                            <li><strong>Ikayaki (calamar grillé) :</strong> se vend dans les échoppes de rue, aplati et grillé sur plaque chauffante avec une sauce sucrée-salée. Snack typique à 300-500 yen.</li>
+                            <li><strong>Ramen d'Osaka :</strong> le menya 7.5Hz et autres ramen d'Osaka privilégient les bouillons à base de soja plutôt que le miso ou tonkotsu.</li>
+                        </ul>
+                        
+                        <h2>Transport et déplacement</h2>
+                        <p>Le réseau de transport osakien combine métro municipal, JR, et lignes privées Hankyu, Hanshin, Kintetsu et Nankai. Le métro d'Osaka compte 9 lignes identifiées par couleurs et lettres (M pour Midosuji, T pour Tanimachi, etc.). Un trajet coûte 180-370 yen selon la distance.</p>
+                        
+                        <p><strong>La ligne Midosuji (rouge)</strong> traverse la ville du nord au sud en desservant les principales attractions : Shin-Osaka (Shinkansen), Umeda, Shinsaibashi, Namba, Tennoji. <strong>La ligne Chuo (vert)</strong> connecte est-ouest via le château d'Osaka et Namba.</p>
+                        
+                        <p>Le <strong>pass journalier métro</strong> coûte 800 yen et permet les trajets illimités sur tout le réseau municipal. Le <strong>Osaka Amazing Pass</strong> (2 500 yen 1 jour, 3 300 yen 2 jours) inclut transport et entrées gratuites dans plus de 40 attractions.</p>
+                        
+                        <p>Pour les liaisons régionales, JR dessert Kyoto (45 minutes), Nara (45 minutes), Kobe (30 minutes) et l'aéroport du Kansai (45 minutes). Les lignes privées offrent souvent des services plus rapides et confortables vers ces destinations.</p>
+                        
+                        <h2>Shopping par quartier</h2>
+                        
+                        <h3>Umeda</h3>
+                        <p>Concentre les grands magasins de luxe : Hanshin, Daimaru, Hankyu, et les centres commerciaux Lucua et Grand Front Osaka. Architecture impressionnante et marques internationales dominent. Le Yodobashi Camera d'Umeda s'étend sur 9 étages d'électronique.</p>
+                        
+                        <h3>Shinsaibashi</h3>
+                        <p>Mélange enseignes populaires et boutiques de créateurs. La galerie marchande couverte protège des intempéries. Amerikamura privilégie mode alternative, vintage et culture jeune avec des prix plus accessibles.</p>
+                        
+                        <h3>Nippombashi (Den Den Town)</h3>
+                        <p>Rivalise avec Akihabara pour l'électronique, manga, anime et figurines. Moins touristique que son équivalent tokyoïte, les prix restent souvent plus avantageux. Sumiyoshi abrite des marchés aux puces le week-end.</p>
+                        
+                        <h2>Vie nocturne</h2>
+                        <p>Osaka s'anime particulièrement après 18h. <strong>Dotonbori</strong> concentre restaurants, bars et clubs jusqu'à l'aube. L'alcool se consomme facilement dans la rue, créant une ambiance festive unique au Japon.</p>
+                        
+                        <p><strong>Kitashinchi</strong> propose bars haut de gamme et clubs à l'occidental fréquentés par hommes d'affaires. <strong>Hozenji Yokocho</strong> conserve l'atmosphère des ruelles d'époque avec ses minuscules bars de 6-8 places et ses lanternes en papier.</p>
+                        
+                        <p><strong>Shinsekai</strong> offre une expérience plus populaire avec ses kushikatsu-ya ouverts jusqu'à tard et son ambiance rétro bon enfant. Les karaoke box (Big Echo, Karaoke-kan) restent ouverts 24h/24 avec des tarifs dégressifs après minuit.</p>
+                        
+                        <h2>Événements et saisons</h2>
+                        
+                        <h3>Tenjin Matsuri</h3>
+                        <p>Le Tenjin Matsuri (24-25 juillet) compte parmi les trois plus grands festivals du Japon. Plus d'un million de spectateurs assistent aux processions terrestres et fluviales avec feux d'artifice sur la rivière Okawa. Réservation d'hôtel indispensable plusieurs mois à l'avance.</p>
+                        
+                        <h3>Autres festivals</h3>
+                        <ul>
+                            <li><strong>Sumiyoshi Matsuri :</strong> fin juillet-début août, anime le sanctuaire avec ses mikoshi (autels portables) et performances traditionnelles.</li>
+                            <li><strong>Kishiwada Danjiri Matsuri :</strong> septembre dans la banlieue sud, présente des chars en bois de 4 tonnes tirés à toute vitesse dans les rues.</li>
+                        </ul>
+                        
+                        <h3>Saisons</h3>
+                        <p>Le <strong>printemps (mars-mai)</strong> transforme le parc du château en océan de sakura avec hanami (pique-niques sous les cerisiers) et illuminations nocturnes. L'<strong>automne (novembre-décembre)</strong> pare les jardins de couleurs flamboyantes, particulièrement beaux au sanctuaire Sumiyoshi.</p>
+                        
+                        <h2>Budget et coûts</h2>
+                        <p>Un repas de rue coûte 500-1 000 yen (takoyaki, okonomiyaki), un restaurant correct 1 500-3 000 yen, un établissement réputé 5 000-10 000 yen. Osaka reste généralement 20-30% moins chère que Tokyo pour la restauration et l'hébergement.</p>
+                        
+                        <p><strong>Transport journalier :</strong> 800 yen (pass métro)<br>
+                        <strong>Hébergement :</strong> auberge de jeunesse 2 500-4 000 yen, hôtel business 8 000-12 000 yen, hôtel de luxe 20 000+ yen<br>
+                        <strong>Budget quotidien moyen :</strong> 6 000-8 000 yen en mode économique, 12 000-15 000 yen en mode confortable</p>
+                        
+                        <h2>Accès depuis Tokyo</h2>
+                        <p>Le <strong>Shinkansen Tokaido</strong> relie Tokyo à Shin-Osaka en 2h15 (Nozomi) à 2h45 (Hikari) pour 13 320 yen. Depuis Shin-Osaka, métro Midosuji jusqu'au centre (Namba, Shinsaibashi) en 15 minutes.</p>
+                        
+                        <p><strong>Alternative économique :</strong> bus de nuit Willer Express ou JR Bus (8-9h, 5 000-8 000 yen) ou avion low-cost Jetstar/Peach (1h20 vol + temps aéroport, souvent plus cher au final).</p>
+                        
+                        <h2>Conseils pratiques</h2>
+                        <p>Osaka cultive une mentalité plus décontractée que Tokyo. Les habitants parlent le dialecte osakien (osaka-ben) plus direct et expressif. L'humour tient une place importante dans les interactions sociales, ne soyez pas surpris par l'ambiance bon enfant.</p>
+                        
+                        <p>La ville se visite idéalement en 2-3 jours pour les sites principaux, 4-5 jours pour approfondir la gastronomie et les quartiers. Combinez avec Kyoto (45 minutes) et Nara (40 minutes) pour un circuit Kansai complet.</p>
+                        
+                        <p>Téléchargez l'application <strong>Osaka Metro</strong> pour naviguer dans les transports et <strong>Tabelog</strong> pour les recommandations restaurant (en japonais mais notes universelles). Les konbini restent omniprésents pour dépannage alimentaire et services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
