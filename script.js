@@ -125,61 +125,64 @@ class SavingsTracker {
 
     addTestButtons() {
         // Créer un panneau de test (à supprimer en production)
-        const testPanel = document.createElement('div');
-        testPanel.style.cssText = `
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px;
-            border: 2px solid #ffb7c5;
-            border-radius: 5px;
-            z-index: 1000;
-            font-family: 'VT323', monospace;
-        `;
-        
-        testPanel.innerHTML = `
-            <h4 style="color: #ffb7c5; margin-bottom: 10px;">Test - Ajouter des économies</h4>
-            <button onclick="savingsTracker.addSavings(100)" style="
-                background: #ffb7c5;
-                border: none;
-                padding: 5px 10px;
-                margin: 2px;
-                cursor: pointer;
+        // Ne s'affiche que sur la page principale (index.html)
+        if (window.location.pathname.includes('index.html') || window.location.pathname.endsWith('/')) {
+            const testPanel = document.createElement('div');
+            testPanel.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: rgba(0, 0, 0, 0.8);
+                padding: 15px;
+                border: 2px solid #ffb7c5;
+                border-radius: 5px;
+                z-index: 1000;
                 font-family: 'VT323', monospace;
-                color: #000;
-            ">+100€</button>
-            <button onclick="savingsTracker.addSavings(500)" style="
-                background: #ffb7c5;
-                border: none;
-                padding: 5px 10px;
-                margin: 2px;
-                cursor: pointer;
-                font-family: 'VT323', monospace;
-                color: #000;
-            ">+500€</button>
-            <button onclick="savingsTracker.addSavings(1000)" style="
-                background: #ffb7c5;
-                border: none;
-                padding: 5px 10px;
-                margin: 2px;
-                cursor: pointer;
-                font-family: 'VT323', monospace;
-                color: #000;
-            ">+1000€</button>
-            <br>
-            <button onclick="savingsTracker.resetSavings()" style="
-                background: #ff6b6b;
-                border: none;
-                padding: 5px 10px;
-                margin: 2px;
-                cursor: pointer;
-                font-family: 'VT323', monospace;
-                color: #fff;
-            ">Reset</button>
-        `;
-        
-        document.body.appendChild(testPanel);
+            `;
+            
+            testPanel.innerHTML = `
+                <h4 style="color: #ffb7c5; margin-bottom: 10px;">Test - Ajouter des économies</h4>
+                <button onclick="savingsTracker.addSavings(100)" style="
+                    background: #ffb7c5;
+                    border: none;
+                    padding: 5px 10px;
+                    margin: 2px;
+                    cursor: pointer;
+                    font-family: 'VT323', monospace;
+                    color: #000;
+                ">+100€</button>
+                <button onclick="savingsTracker.addSavings(500)" style="
+                    background: #ffb7c5;
+                    border: none;
+                    padding: 5px 10px;
+                    margin: 2px;
+                    cursor: pointer;
+                    font-family: 'VT323', monospace;
+                    color: #000;
+                ">+500€</button>
+                <button onclick="savingsTracker.addSavings(1000)" style="
+                    background: #ffb7c5;
+                    border: none;
+                    padding: 5px 10px;
+                    margin: 2px;
+                    cursor: pointer;
+                    font-family: 'VT323', monospace;
+                    color: #000;
+                ">+1000€</button>
+                <br>
+                <button onclick="savingsTracker.resetSavings()" style="
+                    background: #ff6b6b;
+                    border: none;
+                    padding: 5px 10px;
+                    margin: 2px;
+                    cursor: pointer;
+                    font-family: 'VT323', monospace;
+                    color: #fff;
+                ">Reset</button>
+            `;
+            
+            document.body.appendChild(testPanel);
+        }
     }
 
     resetSavings() {

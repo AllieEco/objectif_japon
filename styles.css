@@ -737,6 +737,27 @@ body {
     }
 }
 
+/* Contenu de la page voyage */
+.voyage-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.voyage-content h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #74c0fc;
+    margin-bottom: 1rem;
+}
+
+.voyage-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #adb5bd;
+    line-height: 1.6;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .main-title {
