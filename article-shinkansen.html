@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Shinkansen - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button" data-section="langue">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="article-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='voyage.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour au voyage</span>
+                        </button>
+                    </div>
+                    <div class="article-header">
+                        <h1 class="article-title">Le Shinkansen</h1>
+                        <div class="article-image-full">
+                            <img src="assets/shinkansen.jpg" alt="Shinkansen">
+                        </div>
+                    </div>
+                    
+                    <div class="article-body">
+                        <h2>Histoire et technologie</h2>
+                        <p>Le Shinkansen débute ses services le 1er octobre 1964, juste avant les Jeux olympiques de Tokyo. Cette première ligne Tokaido reliant Tokyo à Osaka révolutionne le transport ferroviaire mondial avec des vitesses alors inédites de 210 km/h. Le nom "Shinkansen" signifie littéralement "nouvelle ligne principale".</p>
+                        
+                        <p>Aujourd'hui, le réseau s'étend sur plus de 2 700 kilomètres à travers le Japon, avec des trains atteignant 320 km/h en service commercial. Le record expérimental de 603 km/h a été établi en 2015 sur la future ligne magnétique (maglev) entre Tokyo et Nagoya. Depuis 1964, aucun accident mortel n'a été enregistré sur le réseau, faisant du Shinkansen le moyen de transport le plus sûr au monde.</p>
+                        
+                        <h2>Les différentes lignes</h2>
+                        <p><strong>La ligne Tokaido</strong> reste la plus fréquentée, reliant Tokyo à Osaka en 2h30 via Yokohama, Nagoya et Kyoto. Elle transporte plus de 150 millions de passagers par an. <strong>La ligne Sanyo</strong> prolonge vers l'ouest jusqu'à Hakata (Fukuoka), permettant de rejoindre Hiroshima en 4h depuis Tokyo.</p>
+                        
+                        <p>Au nord, <strong>la ligne Tohoku</strong> dessert Sendai, Morioka et jusqu'à Shin-Aomori, avec des embranchements vers Akita (ligne Akita) et Yamagata (ligne Yamagata). <strong>La ligne Joetsu</strong> mène à Niigata sur la côte ouest, tandis que <strong>la ligne Hokuriku</strong> inaugurée en 2015 relie Tokyo à Kanazawa en 2h30.</p>
+                        
+                        <p><strong>La ligne Kyushu</strong> connecte Hakata à Kagoshima-chuo dans le sud de l'île, et <strong>la ligne Hokkaido</strong> ouverte en 2016 traverse le détroit de Tsugaru par un tunnel sous-marin pour atteindre Shin-Hakodate-Hokuto, avec extension prévue vers Sapporo en 2030.</p>
+                        
+                        <h2>Types de trains et services</h2>
+                        <p>Les trains Shinkansen se classent en plusieurs catégories selon leur vitesse et leurs arrêts. Le <strong>Nozomi</strong> est le plus rapide sur la ligne Tokaido-Sanyo, s'arrêtant uniquement dans les grandes gares (Tokyo, Shinagawa, Nagoya, Kyoto, Osaka, Hiroshima, Hakata). Le <strong>Hikari</strong> effectue plus d'arrêts intermédiaires, tandis que le <strong>Kodama</strong> dessert toutes les stations.</p>
+                        
+                        <p>Sur les autres lignes, les appellations diffèrent mais le principe reste identique : <strong>Hayabusa</strong> (le plus rapide) sur Tohoku, <strong>Tsubame</strong> sur Kyushu, <strong>Kagayaki</strong> sur Hokuriku. Chaque type de service est clairement indiqué sur les panneaux et les billets.</p>
+                        
+                        <h2>Classes et tarifs</h2>
+                        <p>Le Shinkansen propose trois classes de service. Les <strong>sièges ordinaires</strong> (普通車, futsusha) offrent un confort déjà élevé avec 2+3 sièges par rangée, prises électriques et tablettes pliantes. Les <strong>sièges Green Car</strong> (グリーン車, gurin-sha) équivalent à la première classe avec configuration 2+2, sièges plus larges, et service personnalisé.</p>
+                        
+                        <p>La <strong>Gran Class</strong> disponible sur certaines lignes (Tohoku, Joetsu, Hokuriku) propose un service ultra-premium avec sièges inclinables à 45°, repas gastronomiques inclus et service de boissons. Cette classe coûte environ le double du Green Car.</p>
+                        
+                        <p>Pour Tokyo-Osaka, comptez 13 320 yen en siège ordinaire réservé, 17 870 yen en Green Car. Les prix varient selon le type de train (Nozomi plus cher que Hikari) et la période (supplément pendant les Golden Week, Obon et Nouvel An).</p>
+                        
+                        <h2>Système de réservation</h2>
+                        <p>La réservation s'effectue dans les guichets JR (Midori-no-madoguchi), aux distributeurs automatiques, ou en ligne via le site JR. Les <strong>sièges réservés</strong> (指定席, shiteiseki) garantissent une place mais coûtent 320-730 yen de plus. Les <strong>sièges libres</strong> (自由席, jiyuseki) fonctionnent selon le principe premier arrivé, premier servi, généralement dans les voitures 1 à 3.</p>
+                        
+                        <p>Pendant les périodes de forte affluence (Golden Week fin avril-début mai, Obon mi-août, Nouvel An), la réservation devient quasi obligatoire. Les trains affichent complet parfois une semaine à l'avance.</p>
+                        
+                        <h2>Japan Rail Pass et alternatives</h2>
+                        <p>Le <strong>JR Pass national</strong> permet d'utiliser tous les Shinkansen sauf les Nozomi et Mizuho (les plus rapides) sur 7, 14 ou 21 jours consécutifs. Prix 2024 : 29 650 yen (7 jours), 47 250 yen (14 jours), 60 450 yen (21 jours). Le pass devient rentable dès un aller-retour Tokyo-Osaka.</p>
+                        
+                        <p>Des <strong>JR Pass régionaux</strong> couvrent des zones spécifiques : JR Pass Kansai, JR East Pass, JR Kyushu Pass. Ces passes sont souvent plus économiques pour des voyages concentrés sur une région. Le <strong>Hokuriku Arch Pass</strong> couvre Tokyo-Kanazawa-Osaka sur 7 jours pour 25 000 yen.</p>
+                        
+                        <h2>À bord du Shinkansen</h2>
+                        <p>L'expérience débute dès l'embarquement avec les contrôleuses en uniforme impeccable qui s'inclinent avant d'entrer dans chaque voiture. Les sièges se tournent dans le sens de la marche, les toilettes disposent de jets d'eau chauffants, et les voitures restent d'une propreté irréprochable.</p>
+                        
+                        <p>Le service de restauration ambulant propose bento (900-1 500 yen), boissons, snacks et même de la bière. Les distributeurs automatiques entre les voitures offrent boissons chaudes et froides. Sur certaines lignes, un service de restauration à la place est disponible en réservation.</p>
+                        
+                        <p>Le Wi-Fi gratuit "JR-EAST FREE Wi-Fi" ou "JR-WEST FREE Wi-Fi" couvre la plupart des trains, bien que la connexion puisse être instable dans les tunnels montagneux. Chaque siège dispose d'une prise électrique standard japonaise (100V).</p>
+                        
+                        <h2>Ponctualité et efficacité</h2>
+                        <p>La ponctualité du Shinkansen reste légendaire : retard moyen de 36 secondes sur l'année 2019 (incluant les intempéries et incidents techniques). Les trains partent et arrivent généralement à la seconde près. Cette précision s'appuie sur un système de contrôle automatique, des maintenance prédictives, et une culture d'excellence opérationnelle.</p>
+                        
+                        <p>Les horaires sont cadencés : un Tokaido Shinkansen part de Tokyo vers Osaka toutes les 10 minutes aux heures de pointe, toutes les 20 minutes en heures creuses. Cette fréquence permet une flexibilité rare dans les transports longue distance.</p>
+                        
+                        <h2>Étiquette et règles à bord</h2>
+                        <p>Le silence est de mise dans les voitures. Les appels téléphoniques sont interdits (passez en mode silencieux), les conversations se font à voix basse. Les sièges se tournent pour voyager face au sens de la marche : tirez simplement le levier sous l'assise.</p>
+                        
+                        <p>Les bagages se placent dans les porte-bagages au-dessus des sièges ou derrière le dernier rang de chaque voiture. Pour les valises volumineuses, des espaces dédiés existent derrière les derniers sièges, mais la réservation devient obligatoire depuis 2020 pour les bagages de plus de 160 cm (longueur + largeur + hauteur).</p>
+                        
+                        <p>Ne laissez jamais de détritus : emportez vos déchets ou utilisez les poubelles en sortant. Évitez les aliments à odeur forte (bien que les bento soient tolérés). Cédez votre siège aux personnes âgées, femmes enceintes ou handicapées dans les voitures à sièges libres.</p>
+                        
+                        <h2>Gares et connexions</h2>
+                        <p>Les gares Shinkansen sont généralement séparées des gares locales ou connectées par de longs couloirs. À Tokyo, Shinkansen partent de <strong>Tokyo Station</strong> (lignes Tokaido, Tohoku, Joetsu, Hokuriku) et <strong>Ueno Station</strong> (certains Tohoku). <strong>Shinagawa Station</strong> devient le nouveau hub avec l'ouverture de la ligne vers Nagoya.</p>
+                        
+                        <p>Les correspondances avec le métro et JR local sont clairement fléchées. Prévoyez 10-15 minutes minimum pour les changements dans les grandes gares comme Tokyo, Osaka ou Kyoto. Les quais Shinkansen sont numérotés distinctement (généralement 14-19 à Tokyo Station) et situés en étage.</p>
+                        
+                        <h2>Comment prendre le Shinkansen de Tokyo à Osaka</h2>
+                        
+                        <h3>Étape 1 : Se rendre à la gare</h3>
+                        <p>Rendez-vous à Tokyo Station ou Shinagawa Station. Tokyo Station est plus centrale et dessert plus de destinations. Depuis l'aéroport d'Haneda, prenez le Tokyo Monorail jusqu'à Hamamatsucho puis JR Yamanote jusqu'à Tokyo Station (35 minutes, 660 yen).</p>
+                        
+                        <h3>Étape 2 : Acheter son billet</h3>
+                        <p>Dirigez-vous vers les guichets JR (Midori-no-madoguchi) identifiables par leurs panneaux verts, ou utilisez les distributeurs automatiques avec interface anglaise. Pour Tokyo-Osaka, trois options s'offrent à vous : <strong>Nozomi</strong> (2h15, le plus rapide, 13 320 yen), <strong>Hikari</strong> (2h45 avec quelques arrêts, même tarif), ou <strong>Kodama</strong> (3h30 avec tous les arrêts).</p>
+                        
+                        <p>Si vous avez un JR Pass, vous ne pouvez pas prendre le Nozomi. Optez pour le Hikari qui reste très confortable avec seulement 30 minutes supplémentaires. Demandez un siège côté mont Fuji (côté E sur la carte des places) pour la vue entre Tokyo et Nagoya par temps clair.</p>
+                        
+                        <h3>Étape 3 : Trouver votre quai</h3>
+                        <p>Les quais Shinkansen Tokaido se situent aux niveaux supérieurs de Tokyo Station, généralement quais 14 à 19. Suivez les panneaux "Tokaido Shinkansen" et vérifiez votre numéro de quai sur votre billet. Arrivez 10 minutes avant le départ : l'embarquement ferme 1 minute avant l'heure de départ.</p>
+                        
+                        <h3>Étape 4 : Embarquer</h3>
+                        <p>Les voitures sont numérotées de 1 à 16, avec des marquages au sol indiquant où s'arrêtera chaque porte de chaque voiture. Placez-vous dans la file correspondant à votre voiture et votre siège. Les voitures 1-3 sont généralement en sièges libres (jiyuseki), les autres en sièges réservés (shiteiseki). Si vous avez réservé, votre numéro de voiture et de siège figurent sur votre billet.</p>
+                        
+                        <h3>Étape 5 : Le voyage</h3>
+                        <p>Le trajet dure 2h15 en Nozomi, 2h45 en Hikari. Les annonces sont faites en japonais et anglais. Les principales gares d'arrêt sont Shinagawa (5 minutes après Tokyo), Nagoya (1h20), Kyoto (2h05), avant l'arrivée à Shin-Osaka. Ne confondez pas Kyoto Station (京都) et Shin-Osaka (新大阪) qui sont bien distinctes.</p>
+                        
+                        <h3>Étape 6 : Arriver à Osaka</h3>
+                        <p>Le Shinkansen s'arrête à <strong>Shin-Osaka Station</strong>, pas à la gare centrale d'Osaka. Depuis Shin-Osaka, prenez la ligne Osaka Metro Midosuji jusqu'à Osaka/Umeda (7 minutes, 280 yen) pour le centre-ville, ou la ligne JR Tokaido jusqu'à Osaka Station (4 minutes, 160 yen). Pour rejoindre le quartier de Namba/Dotonbori, continuez sur la ligne Midosuji jusqu'à Namba (14 minutes depuis Shin-Osaka, 280 yen).</p>
+                        
+                        <h2>Conseils pratiques</h2>
+                        <p>Réservez votre siège côté mont Fuji (sièges E dans la configuration 3+2) pour la vue spectaculaire par temps clair, particulièrement impressionnante entre Kozu et Shizuoka. Achetez votre bento avant l'embarquement dans les nombreuses boutiques de Tokyo Station, ou commandez le service à bord. Gardez votre billet jusqu'à la sortie de la gare d'arrivée. En cas de correspondance, les guichets JR peuvent modifier gratuitement votre réservation si vous ratez votre train.</p>
+                        
+                        <p>Le Shinkansen vers Osaka part toutes les 10 minutes aux heures de pointe, vous offrant une flexibilité remarquable. Même sans réservation, vous pouvez généralement trouver une place en voiture libre, sauf pendant les périodes de vacances japonaises où la réservation devient indispensable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
