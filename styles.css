@@ -189,9 +189,74 @@ body {
 
 .subtitle {
     font-size: 1.5rem;
-    color: #ffb7c5;
+    color: #833645;
     text-shadow: 0 0 5px rgba(255, 183, 197, 0.8);
     font-weight: 300;
+}
+
+/* Compte à rebours */
+.countdown-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.countdown-container h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    color: #ffb7c5;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(255, 183, 197, 0.8);
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(255, 183, 197, 0.5);
+    border-radius: 0;
+    padding: 1.5rem 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.countdown-number {
+    font-family: 'VT323', monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e91e63;
+    text-shadow: 
+        0 0 10px rgba(233, 30, 99, 0.8),
+        0 0 20px rgba(233, 30, 99, 0.6);
+    min-width: 60px;
+    text-align: center;
+}
+
+.countdown-label {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    color: #ffd1dc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px rgba(255, 209, 220, 0.8);
+}
+
+.countdown-separator {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: #ffb7c5;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 183, 197, 0.8);
+    margin-top: -1rem;
 }
 
 @keyframes fadeInUp {
@@ -756,6 +821,24 @@ body {
     
     .btn-amount {
         font-size: 1rem;
+    }
+    
+    .countdown-timer {
+        gap: 0.5rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.8rem;
+        min-width: 40px;
+    }
+    
+    .countdown-label {
+        font-size: 0.5rem;
+    }
+    
+    .countdown-separator {
+        font-size: 1.5rem;
     }
 }
 
