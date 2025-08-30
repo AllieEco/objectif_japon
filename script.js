@@ -40,9 +40,8 @@ class SakuraAnimation {
         const duration = 8 + Math.random() * 12;
         petal.style.animationDuration = duration + 's';
         
-        // Délai aléatoire
-        const delay = Math.random() * 5;
-        petal.style.animationDelay = delay + 's';
+        // Pas de délai pour éviter la stagnation
+        petal.style.animationDelay = '0s';
         
         // Ajouter au conteneur
         this.container.appendChild(petal);
@@ -54,7 +53,7 @@ class SakuraAnimation {
                 petal.parentNode.removeChild(petal);
                 this.currentPetals--;
             }
-        }, (duration + delay) * 1000);
+        }, duration * 1000);
     }
 }
 
@@ -62,7 +61,7 @@ class SakuraAnimation {
 class SavingsTracker {
     constructor() {
         this.currentSavings = 0;
-        this.targetAmount = 5000;
+        this.targetAmount = 3000;
         this.milestones = [
             { amount: 800, name: "Vol", icon: "✈️", status: "locked" },
             { amount: 1600, name: "Hôtel", icon: "🏨", status: "locked" },

@@ -102,11 +102,12 @@ body {
 .main-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 3rem;
-    color: #ffb7c5;
+    color: #e91e63;
     text-shadow: 
-        0 0 10px rgba(255, 183, 197, 0.8),
-        0 0 20px rgba(255, 183, 197, 0.6),
-        0 0 30px rgba(255, 183, 197, 0.4);
+        0 0 10px rgba(233, 30, 99, 0.8),
+        0 0 20px rgba(233, 30, 99, 0.6),
+        0 0 30px rgba(233, 30, 99, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
     margin-bottom: 1rem;
     letter-spacing: 2px;
     animation: glow 2s ease-in-out infinite alternate;
@@ -133,15 +134,17 @@ body {
 @keyframes glow {
     from {
         text-shadow: 
-            0 0 10px rgba(255, 183, 197, 0.8),
-            0 0 20px rgba(255, 183, 197, 0.6),
-            0 0 30px rgba(255, 183, 197, 0.4);
+            0 0 10px rgba(233, 30, 99, 0.8),
+            0 0 20px rgba(233, 30, 99, 0.6),
+            0 0 30px rgba(233, 30, 99, 0.4),
+            2px 2px 4px rgba(0, 0, 0, 0.8);
     }
     to {
         text-shadow: 
-            0 0 15px rgba(255, 183, 197, 1),
-            0 0 25px rgba(255, 183, 197, 0.8),
-            0 0 35px rgba(255, 183, 197, 0.6);
+            0 0 15px rgba(233, 30, 99, 1),
+            0 0 25px rgba(233, 30, 99, 0.8),
+            0 0 35px rgba(233, 30, 99, 0.6),
+            2px 2px 4px rgba(0, 0, 0, 0.8);
     }
 }
 
