@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Konbini - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button" data-section="langue">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="article-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='voyage.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour au voyage</span>
+                        </button>
+                    </div>
+                    <div class="article-header">
+                        <h1 class="article-title">Les Konbini</h1>
+                        <div class="article-image-full">
+                            <img src="assets/konbini.jpg" alt="Konbini">
+                        </div>
+                    </div>
+                    
+                    <div class="article-body">
+                        <h2>Qu'est-ce qu'un konbini ?</h2>
+                        <p>Le terme "konbini" est la contraction japonaise de "convenience store" (magasin de proximité). Ces supérettes de 100 à 200 m² sont ouvertes 24h/24, 365 jours par an, et offrent bien plus que de simples produits alimentaires. Le Japon compte environ 55 000 konbini, soit environ 1 magasin pour 2 300 habitants. Dans Tokyo, vous en trouverez un tous les 200-300 mètres en moyenne dans les zones urbaines.</p>
+                        
+                        <h2>Histoire et développement</h2>
+                        <p>Le premier konbini japonais ouvre en 1974 : un 7-Eleven à Tokyo sous licence américaine. Le concept explose dans les années 1980 avec l'adaptation du modèle aux besoins spécifiquement japonais. L'innovation majeure arrive dans les années 1990 avec l'introduction des distributeurs automatiques de billets (ATM) et des services administratifs. Aujourd'hui, les konbini gèrent plus de 30% des paiements de factures du pays.</p>
+                        
+                        <h2>Les principales chaînes</h2>
+                        <p><strong>7-Eleven</strong> domine le marché avec 40% des magasins (21 000 points de vente), reconnaissable à ses couleurs rouge, orange et vert. La chaîne est réputée pour son café Seven Café, ses onigiri variés et ses produits sous marque propre.</p>
+                        
+                        <p><strong>FamilyMart</strong> occupe la deuxième position avec 30% du marché (16 500 magasins) en bleu et blanc, spécialisé dans le poulet frit Famichiki et les collaborations avec des marques populaires.</p>
+                        
+                        <p><strong>Lawson</strong> complète le trio de tête avec 25% du marché (14 500 magasins), également en bleu et blanc avec logo rouge, réputé pour ses produits premium Lawson Select et son partenariat avec Baskin-Robbins.</p>
+                        
+                        <p>On trouve aussi <strong>NewDays</strong> dans les gares JR, <strong>Daily Yamazaki</strong> principalement en banlieue, et <strong>Ministop</strong> spécialisé dans les soft-serve et produits laitiers.</p>
+                        
+                        <h2>Services proposés</h2>
+                        <p>Les konbini fonctionnent comme de véritables centres de services multifonctionnels.</p>
+                        
+                        <h3>Services financiers</h3>
+                        <p>Chaque magasin dispose d'ATM disponibles 24h/24, la plupart acceptant les cartes étrangères moyennant des frais de 100 à 220 yen selon l'horaire et la banque, avec une limite généralement fixée à 50 000 yen par transaction.</p>
+                        
+                        <h3>Logistique</h3>
+                        <p>Vous pouvez expédier des colis via Yamato Transport ou Japan Post, recevoir gratuitement vos commandes avec un numéro de suivi, et même envoyer du courrier international par EMS.</p>
+                        
+                        <h3>Services administratifs</h3>
+                        <p>Incluent le paiement de factures d'électricité, gaz, téléphone et assurances, les photocopies à 10 yen par page A4 noir et blanc (50-80 yen couleur), l'impression depuis smartphone ou clé USB, et l'envoi de fax à 50 yen national ou 100-500 yen international.</p>
+                        
+                        <h3>Billetterie</h3>
+                        <p>Permet d'acheter des tickets pour concerts et événements via les terminaux Loppi (Lawson) ou Famiport (FamilyMart), des billets de bus longue distance, ferries, et même des entrées pour les parcs d'attractions comme Disney ou Universal Studios Japan.</p>
+                        
+                        <h2>Alimentation et produits</h2>
+                        
+                        <h3>Comptoir de produits chauds</h3>
+                        <ul>
+                            <li><strong>Karaage (poulet frit) :</strong> 150-250 yen</li>
+                            <li><strong>Onigiri (boulettes de riz) :</strong> 100-200 yen dans plus de 30 variétés</li>
+                            <li><strong>Yakitori :</strong> 120-180 yen la brochette</li>
+                            <li><strong>Oden (pot-au-feu japonais) :</strong> d'octobre à mars à 100-150 yen l'ingrédient</li>
+                        </ul>
+                        
+                        <h3>Repas complets</h3>
+                        <ul>
+                            <li><strong>Bento classiques :</strong> 400-600 yen</li>
+                            <li><strong>Sandwichs :</strong> 150-300 yen (œuf, thon, katsu)</li>
+                            <li><strong>Salades :</strong> 200-400 yen</li>
+                            <li><strong>Pâtes instantanées :</strong> 150-300 yen</li>
+                        </ul>
+                        
+                        <h3>Boissons</h3>
+                        <ul>
+                            <li><strong>Café standard :</strong> 100 yen (spécialités 150-200 yen)</li>
+                            <li><strong>Thés :</strong> 100-150 yen</li>
+                            <li><strong>Soft drinks :</strong> 120-160 yen</li>
+                            <li><strong>Bières :</strong> 200-300 yen</li>
+                            <li><strong>Saké :</strong> 300-800 yen</li>
+                        </ul>
+                        
+                        <h3>Desserts et snacks</h3>
+                        <ul>
+                            <li><strong>Pâtisseries :</strong> 120-200 yen (crème brûlée, éclairs, mochi)</li>
+                            <li><strong>Glaces :</strong> 100-250 yen aux parfums exclusifs japonais</li>
+                            <li><strong>Snacks variés :</strong> 100-300 yen (chips, bonbons, chocolats)</li>
+                        </ul>
+                        
+                        <h2>Mode d'emploi pour touristes</h2>
+                        
+                        <h3>Paiement</h3>
+                        <p>S'effectue en espèces (acceptées partout), cartes de crédit (de plus en plus acceptées), IC cards (Suica, Pasmo) pour petits montants, ou applications mobiles japonaises comme PayPay.</p>
+                        
+                        <h3>Réchauffage des plats</h3>
+                        <p>Apportez votre plat au comptoir où le personnel demande "Atatamemasu ka?" (réchauffer ?). Répondez "Hai" (oui) ou faites un signe de tête, puis récupérez le plat chaud avec les baguettes ou cuillères offertes.</p>
+                        
+                        <h3>Utilisation des ATM</h3>
+                        <p>Disposent généralement d'un écran en anglais. Insérez votre carte, sélectionnez "Withdrawal" (retrait), choisissez le montant par tranches de 1 000 yen. Attention : les billets sortent avant la carte, contrairement aux habitudes européennes.</p>
+                        
+                        <h3>Services d'impression</h3>
+                        <p>Utilisez les terminaux multimédia Loppi ou Famiport avec interface anglaise disponible. Vous pouvez imprimer depuis votre smartphone via des applications dédiées, puis payer au comptoir après utilisation.</p>
+                        
+                        <h2>Étiquette et codes sociaux</h2>
+                        <p>En magasin, saluer n'est pas nécessaire pour les touristes. Évitez de manger à l'intérieur sauf dans les espaces dédiés, et n'ouvrez pas les produits avant d'avoir payé. Les poubelles séparées devant chaque konbini permettent de trier combustible, plastique, canettes et bouteilles. Les emballages des produits achetés en konbini peuvent y être jetés.</p>
+                        
+                        <p>Le personnel est très serviable mais peu parlent anglais. La communication par gestes fonctionne généralement bien, et votre patience sera appréciée lors des premières utilisations des services.</p>
+                        
+                        <h2>Spécialités saisonnières</h2>
+                        
+                        <h3>Printemps (mars-mai)</h3>
+                        <p>Sakura-mochi et produits aux fleurs de cerisier, bento hanami pour pique-niques et nouvelles saveurs de Kit-Kat.</p>
+                        
+                        <h3>Été (juin-août)</h3>
+                        <p>Kakigori (glace pilée), soft-serve, éditions limitées de boissons rafraîchissantes et bento légers.</p>
+                        
+                        <h3>Automne (septembre-novembre)</h3>
+                        <p>Produits à la patate douce (imo), châtaignes, saveurs automnales et début de la saison oden.</p>
+                        
+                        <h3>Hiver (décembre-février)</h3>
+                        <p>Oden en libre-service, boissons chaudes étendues, chocolats et desserts Saint-Valentin/White Day.</p>
+                        
+                        <h2>Conseils pratiques pour voyageurs</h2>
+                        
+                        <h3>Petit-déjeuner économique</h3>
+                        <p>Pour 300-500 yen, optez pour onigiri (100-150 yen) + café (100 yen) + yaourt (120 yen), ou sandwich œuf + salade + boisson chaude.</p>
+                        
+                        <h3>Déjeuner rapide</h3>
+                        <p>Coûte 400-700 yen avec bento + soupe miso instantanée, ou pâtes + salade + dessert.</p>
+                        
+                        <h3>En cas d'urgence</h3>
+                        <p>Les konbini proposent parapluies (300-500 yen, indispensables), chargeurs portables (1 000-2 000 yen), produits d'hygiène à prix comparables à l'Europe, et médicaments de base sans ordonnance.</p>
+                        
+                        <h3>Applications utiles</h3>
+                        <p>Les applications 7-Eleven et FamilyMart offrent promotions et géolocalisation, tandis que Google Translate en mode caméra aide à lire les étiquettes.</p>
+                        
+                        <h2>Budget et comparaisons</h2>
+                        <p>Le coût moyen par visite varie entre 300-500 yen pour un usage quotidien, 500-800 yen pour un touriste occasionnel, et 600-1 000 yen pour un repas complet. Comparé aux restaurants (1 000-2 500 yen), les konbini offrent des bento à 400-600 yen. Les prix sont généralement 10-20% plus élevés qu'en supermarché, mais compensés par l'ouverture 24h/24 et les portions individuelles.</p>
+                        
+                        <h2>Erreurs à éviter</h2>
+                        
+                        <h3>Avec les ATM</h3>
+                        <p>N'oubliez pas de reprendre votre carte qui sort en dernier. Le paiement de factures est impossible sans adresse japonaise, et vérifiez les restrictions douanières pour les colis internationaux.</p>
+                        
+                        <h3>Concernant les produits</h3>
+                        <ul>
+                            <li>La vente d'alcool est interdite aux moins de 20 ans avec contrôle systématique</li>
+                            <li>Certains plats chauds contiennent du porc</li>
+                            <li>Les dates de péremption suivent le format japonais AA/MM/JJ</li>
+                        </ul>
+                        
+                        <h3>Niveau comportement</h3>
+                        <ul>
+                            <li>Évitez de bloquer l'accès aux réfrigérateurs</li>
+                            <li>Ne monopolisez pas les ATM aux heures de pointe</li>
+                            <li>Laissez la priorité aux locaux pour les services administratifs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

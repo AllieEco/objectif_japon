@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harajuku - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button" data-section="langue">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="article-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='voyage.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour au voyage</span>
+                        </button>
+                    </div>
+                    <div class="article-header">
+                        <h1 class="article-title">Harajuku</h1>
+                        <div class="article-image-full">
+                            <img src="assets/harajuku.jpg" alt="Harajuku">
+                        </div>
+                    </div>
+                    
+                    <div class="article-body">
+                        <h2>L'histoire du quartier</h2>
+                        <p>Harajuku était à l'origine un simple relais postal (shuku-eki) sur la route du Tokaido pendant la période d'Edo. Le nom signifie littéralement "prairie originelle". La transformation moderne commence en 1906 avec l'ouverture de la gare JR Harajuku.</p>
+                        
+                        <p>Le quartier devient célèbre dans les années 1960-70 comme lieu de résidence d'artistes et de créateurs. La véritable révolution culturelle démarre dans les années 1980 avec l'émergence des premières boutiques de mode alternative sur Takeshita-dori.</p>
+                        
+                        <p>Les années 1990-2000 voient naître les mouvements de mode de rue (decora, visual kei, Gothic Lolita) qui feront la réputation mondiale d'Harajuku. Aujourd'hui, le quartier reste le laboratoire de la mode jeune japonaise.</p>
+                        
+                        <h2>Géographie du quartier</h2>
+                        
+                        <h3>Takeshita-dori (Takeshita Street)</h3>
+                        <p>Rue piétonne de 400 mètres entre la gare JR Harajuku et l'avenue Meiji-dori. Concentration maximale de boutiques kawaii, crêperies et accessoires. Largeur de 3-4 mètres seulement, d'où les embouteillages humains le week-end.</p>
+                        
+                        <h3>Cat Street (Ura-Harajuku)</h3>
+                        <p>Rue parallèle plus calme reliant Harajuku à Shibuya. Boutiques de créateurs émergents, cafés branchés et vintage shops. Moins touristique mais plus authentique.</p>
+                        
+                        <h3>Omotesando</h3>
+                        <p>Avenue prestigieuse bordée d'arbres menant au sanctuaire Meiji. Boutiques de luxe (Prada, Louis Vuitton, Comme des Garçons). Architecture contemporaine remarquable.</p>
+                        
+                        <h2>Les incontournables</h2>
+                        
+                        <h3>Takeshita-dori</h3>
+                        <p><strong>Meilleur moment :</strong> en semaine 10h-16h (week-end impraticable)<br>
+                        <strong>Spécialités :</strong> accessoires kawaii, vêtements cosplay, crêpes sucrées<br>
+                        <strong>Budget moyen :</strong> 1 000-5 000 yen pour accessoires, 500-800 yen pour crêpes</p>
+                        
+                        <h3>Sanctuaire Meiji-jingu</h3>
+                        <p><strong>Accès :</strong> 5 minutes à pied depuis la gare Harajuku<br>
+                        <strong>Horaires :</strong> lever du soleil - coucher du soleil (gratuit)<br>
+                        <strong>Particularité :</strong> forêt de 100 hectares en plein Tokyo, 100 000 arbres</p>
+                        
+                        <h3>LaForet Harajuku</h3>
+                        <p>Centre commercial de 8 étages spécialisé dans la mode alternative<br>
+                        <strong>Horaires :</strong> 11h-20h tous les jours<br>
+                        <strong>Public cible :</strong> 15-30 ans, style avant-gardiste<br>
+                        <strong>Marques notables :</strong> 6%DokiDoki, Listen Flavor, Milk</p>
+                        
+                        <h3>Design Festa Gallery</h3>
+                        <p>Galerie d'art contemporain sur 3 étages<br>
+                        <strong>Horaires :</strong> 11h-20h (fermé le mardi)<br>
+                        <strong>Entrée :</strong> gratuite<br>
+                        <strong>Concept :</strong> exposition permanente d'artistes émergents japonais</p>
+                        
+                        <h2>Styles de mode observés</h2>
+                        
+                        <h3>Decora</h3>
+                        <p>Accumulation d'accessoires colorés (barrettes, peluches, autocollants). Principalement pratiqué par les 15-20 ans le dimanche après-midi.</p>
+                        
+                        <h3>Lolita Fashion</h3>
+                        <p>Robes à volants inspirées de l'époque victorienne. Sous-catégories : Sweet Lolita (pastel), Gothic Lolita (noir), Classic Lolita (sobre).</p>
+                        
+                        <h3>Visual Kei</h3>
+                        <p>Style dérivé du rock japonais : maquillage dramatique, cheveux colorés, vêtements noirs avec accessoires métalliques.</p>
+                        
+                        <h3>Fairy Kei</h3>
+                        <p>Couleurs pastel, références aux dessins animés des années 1980-90. Moins extrême que le decora.</p>
+                        
+                        <h2>Shopping par spécialité</h2>
+                        
+                        <h3>Accessoires kawaii</h3>
+                        <ul>
+                            <li><strong>6%DokiDoki (LaForet B1) :</strong> accessoires decora, 500-3 000 yen</li>
+                            <li><strong>Cute Cube (Takeshita-dori) :</strong> barrettes et peluches, 300-1 500 yen</li>
+                            <li><strong>Daiso (Takeshita-dori) :</strong> tout à 110 yen</li>
+                        </ul>
+                        
+                        <h3>Vêtements alternative</h3>
+                        <ul>
+                            <li><strong>Closet Child :</strong> vintage Lolita d'occasion, 5 000-20 000 yen</li>
+                            <li><strong>Baby, The Stars Shine Bright :</strong> Lolita haut de gamme, 20 000-50 000 yen</li>
+                            <li><strong>Listen Flavor :</strong> kawaii mainstream, 8 000-15 000 yen</li>
+                        </ul>
+                        
+                        <h3>Cosplay</h3>
+                        <ul>
+                            <li><strong>Acos (LaForet 6F) :</strong> costumes officiels, 15 000-30 000 yen</li>
+                            <li><strong>Mandarake (Takeshita-dori) :</strong> manga et cosplay d'occasion</li>
+                        </ul>
+                        
+                        <h3>Créateurs émergents (Cat Street)</h3>
+                        <ul>
+                            <li><strong>Comme des Garçons :</strong> avant-garde japonaise</li>
+                            <li><strong>Undercover :</strong> streetwear conceptuel</li>
+                            <li><strong>Boutiques indépendantes :</strong> pièces uniques 5 000-50 000 yen</li>
+                        </ul>
+                        
+                        <h2>Gastronomie</h2>
+                        
+                        <h3>Crêpes de Takeshita-dori</h3>
+                        <ul>
+                            <li><strong>Marion Crêpes :</strong> pionnière depuis 1976, 400-800 yen</li>
+                            <li><strong>Angels Heart :</strong> crêpes colorées Instagram-friendly, 600-1 000 yen</li>
+                            <li><strong>Spécialités :</strong> crêpes aux haricots rouges, glace matcha, fruits de saison</li>
+                        </ul>
+                        
+                        <h3>Cafés à thème</h3>
+                        <ul>
+                            <li><strong>Kawaii Monster Café :</strong> fermé en 2021, remplacé par divers pop-up cafés</li>
+                            <li><strong>Alcatraz ER :</strong> café-hôpital avec serveuses infirmières, 3 000 yen par personne</li>
+                            <li><strong>Gundam Café :</strong> dédié aux robots Gundam</li>
+                        </ul>
+                        
+                        <h3>Street food</h3>
+                        <ul>
+                            <li><strong>Takoyaki (boulettes de poulpe) :</strong> 500-800 yen</li>
+                            <li><strong>Taiyaki (pâtisserie poisson) :</strong> 200-400 yen</li>
+                            <li><strong>Kakigori (glace pilée) :</strong> 600-1 200 yen</li>
+                        </ul>
+                        
+                        <h2>Informations pratiques</h2>
+                        
+                        <h3>Accès transport</h3>
+                        <ul>
+                            <li><strong>Gare JR Harajuku (ligne Yamanote) :</strong> sortie Takeshita (est) pour la rue commerçante</li>
+                            <li><strong>Station Meiji-jingumai (métro Chiyoda, Fukutoshin) :</strong> accès direct à Omotesando</li>
+                            <li><strong>Station Omotesando (métro Ginza, Hanzomon, Chiyoda) :</strong> pour Cat Street</li>
+                        </ul>
+                        
+                        <h3>Horaires d'affluence</h3>
+                        <p><strong>À éviter :</strong></p>
+                        <ul>
+                            <li>Dimanche 13h-17h (pic touristique maximum)</li>
+                            <li>Samedi 14h-18h (shopping des locals)</li>
+                            <li>Vacances scolaires toute la journée</li>
+                        </ul>
+                        
+                        <p><strong>Optimal :</strong></p>
+                        <ul>
+                            <li>Semaine 10h-12h et après 18h</li>
+                            <li>Dimanche matin avant 11h</li>
+                        </ul>
+                        
+                        <h3>Budget type journée</h3>
+                        <ul>
+                            <li><strong>Économique :</strong> 3 000-5 000 yen (transport + crêpe + quelques accessoires)</li>
+                            <li><strong>Moyen :</strong> 8 000-15 000 yen (repas + shopping modéré)</li>
+                            <li><strong>Élevé :</strong> 20 000+ yen (pièces de créateurs + restaurants)</li>
+                        </ul>
+                        
+                        <h2>Pièges à éviter</h2>
+                        
+                        <h3>Arnaques et désagréments</h3>
+                        <ul>
+                            <li><strong>Photos payantes :</strong> certains cosplayers demandent 500-1 000 yen pour une photo. Toujours demander le prix avant.</li>
+                            <li><strong>Boutiques de contrefaçons :</strong> éviter les stands temporaires vendant des produits de marque à prix cassés.</li>
+                            <li><strong>Restaurants touristiques :</strong> les établissements avec menus multilingues sur Takeshita-dori pratiquent souvent des prix gonflés.</li>
+                        </ul>
+                        
+                        <h3>Erreurs de débutant</h3>
+                        <ul>
+                            <li><strong>Shopping le week-end :</strong> queues interminables et circulation difficile</li>
+                            <li><strong>Bagages encombrants :</strong> pas de consignes sur Takeshita-dori, utiliser celles de la gare</li>
+                            <li><strong>Photos sans permission :</strong> toujours demander avant de photographier quelqu'un en costume</li>
+                        </ul>
+                        
+                        <h2>Codes sociaux à respecter</h2>
+                        
+                        <h3>Photographie</h3>
+                        <p>Demander l'autorisation avant de photographier quelqu'un, même en costume extravagant. Beaucoup acceptent volontiers mais apprécient qu'on demande.</p>
+                        
+                        <h3>Comportement</h3>
+                        <p>Les jeunes en costume ne sont pas des attractions touristiques mais des individus exprimant leur créativité. Éviter de les suivre ou de les observer de façon insistante.</p>
+                        
+                        <h3>Dans les boutiques</h3>
+                        <p>Beaucoup de petites boutiques n'autorisent pas les photos. Respecter les panneaux d'interdiction.</p>
+                        
+                        <h2>Événements réguliers</h2>
+                        
+                        <h3>Design Festa</h3>
+                        <p>Salon d'art contemporain 2 fois par an (mai et novembre) au Tokyo Big Sight. Plus de 10 000 artistes exposants.</p>
+                        
+                        <h3>Cosplay gatherings</h3>
+                        <p>Rassemblements informels le dimanche après-midi près du pont JR Harajuku (côté parc Yoyogi). Pas d'horaire fixe, dépend de la météo.</p>
+                        
+                        <h3>Pop-up stores</h3>
+                        <p>Boutiques temporaires de marques émergentes, principalement sur Cat Street. Informations via réseaux sociaux japonais.</p>
+                        
+                        <h2>Accès depuis Shibuya</h2>
+                        <p><strong>À pied :</strong> 15-20 minutes via Cat Street (parcours le plus intéressant)<br>
+                        <strong>JR Yamanote :</strong> 2 minutes, 1 station (Shibuya → Harajuku)<br>
+                        <strong>Prix :</strong> 140 yen</p>
+                        
+                        <h2>Conseils pour la visite</h2>
+                        
+                        <h3>Timing optimal</h3>
+                        <ul>
+                            <li><strong>2-3 heures minimum :</strong> pour Takeshita-dori et LaForet</li>
+                            <li><strong>Demi-journée :</strong> pour inclure Cat Street et Omotesando</li>
+                            <li><strong>Journée complète :</strong> avec le sanctuaire Meiji et shopping approfondi</li>
+                        </ul>
+                        
+                        <h3>Apps utiles</h3>
+                        <ul>
+                            <li><strong>Instagram :</strong> hashtag #harajukufashion pour les dernières tendances</li>
+                            <li><strong>Google Lens :</strong> identification des produits et marques japonaises</li>
+                            <li><strong>Tabelog :</strong> avis sur restaurants (en japonais mais notes universelles)</li>
+                        </ul>
+                        
+                        <h3>Que ramener</h3>
+                        <ul>
+                            <li>Accessoires kawaii uniques (introuvables ailleurs)</li>
+                            <li>Produits de beauté japonais (masques, cosmétiques)</li>
+                            <li>Vêtements de créateurs émergents</li>
+                            <li>Kit Kat aux saveurs régionales (dans les konbini)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
