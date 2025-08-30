@@ -114,9 +114,38 @@
                     </div>
                 </div>
                 </div>
+                
+                <div class="economy-buttons">
+                    <button class="economy-btn daily-economy" onclick="savingsTracker.addSavings(15)">
+                        <span class="btn-icon">📅</span>
+                        <span class="btn-text">Économie quotidienne</span>
+                        <span class="btn-amount">+15€</span>
+                    </button>
+                    <button class="economy-btn free-economy" onclick="savingsTracker.showFreeEconomyPopup()">
+                        <span class="btn-icon">💎</span>
+                        <span class="btn-text">Économie libre</span>
+                        <span class="btn-amount">+€</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
+
+    <!-- Popup pour économie libre -->
+    <div class="popup-overlay" id="freeEconomyPopup">
+        <div class="popup-content">
+            <h3>Économie libre</h3>
+            <p>Combien avez-vous mis de côté ?</p>
+            <div class="popup-input">
+                <input type="number" id="freeAmount" placeholder="Montant en euros" min="0" step="0.01">
+                <span class="currency">€</span>
+            </div>
+            <div class="popup-buttons">
+                <button class="popup-btn cancel" onclick="savingsTracker.closeFreeEconomyPopup()">Annuler</button>
+                <button class="popup-btn confirm" onclick="savingsTracker.confirmFreeEconomy()">Confirmer</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

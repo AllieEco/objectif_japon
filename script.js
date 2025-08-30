@@ -188,6 +188,54 @@ class SavingsTracker {
         this.updateDisplay();
     }
 
+    showFreeEconomyPopup() {
+        const popup = document.getElementById('freeEconomyPopup');
+        const input = document.getElementById('freeAmount');
+        
+        popup.classList.add('show');
+        input.focus();
+        
+        // Fermer avec Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeFreeEconomyPopup();
+            }
+        });
+        
+        // Confirmer avec Enter
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                this.confirmFreeEconomy();
+            }
+        });
+    }
+
+    closeFreeEconomyPopup() {
+        const popup = document.getElementById('freeEconomyPopup');
+        const input = document.getElementById('freeAmount');
+        
+        popup.classList.remove('show');
+        input.value = '';
+    }
+
+    confirmFreeEconomy() {
+        const input = document.getElementById('freeAmount');
+        const amount = parseFloat(input.value);
+        
+        if (amount && amount > 0) {
+            this.addSavings(amount);
+            this.closeFreeEconomyPopup();
+        } else {
+            // Animation d'erreur sur l'input
+            input.style.borderColor = '#ff6b6b';
+            input.style.animation = 'shake 0.5s ease-in-out';
+            setTimeout(() => {
+                input.style.borderColor = 'rgba(255, 183, 197, 0.5)';
+                input.style.animation = '';
+            }, 500);
+        }
+    }
+
     updateMilestones() {
         const milestoneElements = document.querySelectorAll('.milestone');
         
@@ -270,15 +318,6 @@ class VisualEffects {
     }
 
     init() {
-        // Effet de parallaxe sur l'arrière-plan
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const background = document.querySelector('.background-image');
-            if (background) {
-                background.style.transform = `scale(1.1) translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
         // Effet de hover sur les boîtes de statistiques
         const statBoxes = document.querySelectorAll('.stat-box');
         statBoxes.forEach(box => {
