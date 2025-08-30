@@ -173,15 +173,15 @@ body {
 }
 
 .main-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-family: 'Orbitron', monospace;
+    font-size: 4rem;
+    font-weight: 900;
     color: #f8f9fa;
     text-shadow: 
         0 2px 4px rgba(0, 0, 0, 0.3),
         0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -202,7 +202,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: #f8f9fa;
+    color: #adb5bd;
     margin-bottom: 1rem;
     letter-spacing: 0.5px;
 }
@@ -230,7 +230,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 800;
-    color: #74c0fc;
+    color: #e91e63;
     min-width: 60px;
     text-align: center;
 }
@@ -246,7 +246,7 @@ body {
 .countdown-separator {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    color: #adb5bd;
+    color: #e91e63;
     font-weight: 700;
     margin-top: -1rem;
 }
