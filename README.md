@@ -13,6 +13,8 @@ Un site web élégant pour suivre vos économies en vue de votre voyage au Japon
 - **Boutons d'économie** : Économie quotidienne (+15€) et économie libre (montant personnalisé)
 - **Popup interactive** : Saisie de montant pour l'économie libre
 - **Navigation** : Header avec 3 sections (Stats, Voyage, Langue)
+- **Page Voyage** : 9 articles détaillés sur les destinations japonaises
+- **Articles interactifs** : Navigation fluide entre les articles avec boutons retour
 - **Barre de progression** : Affichage visuel de votre progression vers l'objectif
 - **Sauvegarde locale** : Vos données sont sauvegardées dans le navigateur
 - **Responsive** : S'adapte à tous les écrans
@@ -38,13 +40,22 @@ Un site web élégant pour suivre vos économies en vue de votre voyage au Japon
 
 ```
 objectif_japon/
-├── index.html          # Page principale
-├── styles.css          # Styles CSS avec animations
-├── script.js           # JavaScript pour les interactions
-├── README.md           # Documentation
-└── assets/
-    ├── background.jpg  # Image d'arrière-plan
-    └── *.png           # Autres images du projet
+├── index.html          # Page d'accueil avec suivi des économies
+├── voyage.html         # Page des articles de voyage
+├── articles/           # Dossier contenant tous les articles
+│   ├── article-haneda.html
+│   ├── article-shibuya.html
+│   ├── article-harajuku.html
+│   ├── article-konbini.html
+│   ├── article-shinkansen.html
+│   ├── article-osaka.html
+│   ├── article-universal.html
+│   ├── article-pokemon.html
+│   └── article-food.html
+├── styles.css          # Styles CSS
+├── script.js           # JavaScript
+├── assets/             # Images et ressources
+└── README.md           # Documentation
 ```
 
 ## 🛠️ Technologies utilisées
@@ -56,7 +67,7 @@ objectif_japon/
 
 ## 🎯 Fonctionnalités à venir
 
-- [ ] Sections "Voyage" et "Langue" dans la navigation
+- [ ] Section "Langue" dans la navigation
 - [ ] Historique des transactions
 - [ ] Notifications de progression
 - [ ] Export des données
@@ -74,6 +85,18 @@ Ce projet s'inspire de l'esthétique des jeux vidéo japonais classiques et de l
 - **🏯 Osaka** : 1800€
 - **🍜 Restaurant** : 2400€
 - **⚡ Shopping Pokemon** : 3000€
+
+## 📚 Articles de voyage disponibles
+
+- **🛬 Arrivée à Tokyo** : Guide complet de l'aéroport d'Haneda
+- **🌃 Shibuya** : Le quartier le plus dynamique de Tokyo
+- **👗 Harajuku** : Berceau de la mode alternative japonaise
+- **🏪 Les Konbini** : Les supérettes 24h/24 du Japon
+- **🚄 Le Shinkansen** : Le train à grande vitesse japonais
+- **🍜 Osaka** : La capitale gastronomique du Japon
+- **🎢 Universal Studios Japan** : Le parc d'attractions d'Osaka
+- **🎮 Pokémon Center et Nintendo Shop** : Le Cyberspace Shibuya
+- **🍡 Street Food sans viande** : Guide culinaire végétarien à Tokyo
 
 ---
 
