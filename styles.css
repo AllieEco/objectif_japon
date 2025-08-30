@@ -129,10 +129,10 @@ body {
 }
 
 .nav-button.active {
-    background: rgba(233, 30, 99, 0.1);
-    border-color: rgba(233, 30, 99, 0.3);
-    color: #e91e63;
-    box-shadow: 0 0 15px rgba(233, 30, 99, 0.2);
+    background: rgba(116, 192, 252, 0.1);
+    border-color: rgba(116, 192, 252, 0.3);
+    color: #74c0fc;
+    box-shadow: 0 0 15px rgba(116, 192, 252, 0.2);
 }
 
 .nav-icon {
@@ -230,7 +230,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #e91e63;
+    color: #74c0fc;
     min-width: 60px;
     text-align: center;
 }
@@ -246,7 +246,7 @@ body {
 .countdown-separator {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5rem;
-    color: #e91e63;
+    color: #74c0fc;
     font-weight: 400;
     margin-top: -1rem;
 }
@@ -361,7 +361,7 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.8rem;
     font-weight: 400;
-    color: #e91e63;
+    color: #74c0fc;
 }
 
 /* Barre de progression */
@@ -377,7 +377,7 @@ body {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #e91e63, #f48fb1);
+    background: linear-gradient(90deg, #74c0fc, #a5d8ff);
     transition: width 1s ease-in-out;
     border-radius: 6px;
 }
@@ -399,12 +399,12 @@ body {
 .milestones-container h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
-    color: #e91e63;
+    color: #74c0fc;
     text-align: center;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 0 0 5px rgba(233, 30, 99, 0.8);
+    text-shadow: 0 0 5px rgba(116, 192, 252, 0.8);
 }
 
 .milestones-grid {
@@ -569,25 +569,25 @@ body {
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9rem;
     font-weight: 400;
-    color: #e91e63;
+    color: #74c0fc;
 }
 
 .daily-economy {
-    border-color: rgba(233, 30, 99, 0.3);
+    border-color: rgba(116, 192, 252, 0.3);
 }
 
 .daily-economy:hover {
-    border-color: rgba(233, 30, 99, 0.5);
-    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.2);
+    border-color: rgba(116, 192, 252, 0.5);
+    box-shadow: 0 8px 20px rgba(116, 192, 252, 0.2);
 }
 
 .free-economy {
-    border-color: rgba(233, 30, 99, 0.3);
+    border-color: rgba(116, 192, 252, 0.3);
 }
 
 .free-economy:hover {
-    border-color: rgba(233, 30, 99, 0.5);
-    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.2);
+    border-color: rgba(116, 192, 252, 0.5);
+    box-shadow: 0 8px 20px rgba(116, 192, 252, 0.2);
 }
 
 /* Popup styles */
