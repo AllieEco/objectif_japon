@@ -58,35 +58,21 @@ body {
 
 .sakura-petal {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(45deg, #ffb7c5, #ffd1dc, #ffe4e1);
-    border-radius: 50% 0 50% 50%;
+    font-size: 20px;
     animation: fall linear infinite;
     opacity: 0.8;
-    box-shadow: 0 0 5px rgba(255, 183, 197, 0.5);
-}
-
-.sakura-petal::before {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 3px;
-    height: 3px;
-    background: #ff69b4;
-    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(255, 183, 197, 0.5));
 }
 
 @keyframes fall {
     0% {
-        transform: translateY(-10px) rotate(0deg);
+        transform: translateY(-50px) rotate(0deg);
         opacity: 0;
     }
-    10% {
+    5% {
         opacity: 0.8;
     }
-    90% {
+    95% {
         opacity: 0.8;
     }
     100% {

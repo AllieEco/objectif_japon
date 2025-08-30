@@ -26,15 +26,15 @@ class SakuraAnimation {
     createPetal() {
         const petal = document.createElement('div');
         petal.className = 'sakura-petal';
+        petal.textContent = '🌸';
         
         // Position aléatoire
         const startX = Math.random() * window.innerWidth;
         petal.style.left = startX + 'px';
         
         // Taille aléatoire
-        const size = 10 + Math.random() * 10;
-        petal.style.width = size + 'px';
-        petal.style.height = size + 'px';
+        const size = 15 + Math.random() * 15;
+        petal.style.fontSize = size + 'px';
         
         // Durée d'animation aléatoire
         const duration = 8 + Math.random() * 12;
