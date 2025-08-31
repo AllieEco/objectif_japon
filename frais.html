@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frais - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button active" data-section="frais">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button" data-section="langue">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="title-container">
+            <h1 class="main-title">Suivi des Frais</h1>
+            <p class="subtitle">Gérez vos dépenses au Japon</p>
+        </div>
+        
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="frais-content">
+                    <h2>Convertisseur de Devises</h2>
+                    
+                    <div class="converter-container">
+                        <div class="converter-box">
+                            <div class="currency-input">
+                                <label for="euro-amount">Euros (€)</label>
+                                <input type="number" id="euro-amount" placeholder="0.00" step="0.01" min="0">
+                            </div>
+                            
+                            <div class="converter-arrows">
+                                <button class="convert-btn" id="euro-to-yen">
+                                    <span>€ → ¥</span>
+                                </button>
+                                <button class="convert-btn" id="yen-to-euro">
+                                    <span>¥ → €</span>
+                                </button>
+                            </div>
+                            
+                            <div class="currency-input">
+                                <label for="yen-amount">Yen (¥)</label>
+                                <input type="number" id="yen-amount" placeholder="0" step="1" min="0">
+                            </div>
+                        </div>
+                        
+                        <div class="exchange-rate">
+                            <p>Taux de change en temps réel : <span id="current-rate">1 € = 160 ¥</span></p>
+                            <button class="update-rate-btn" id="update-rate">Mettre à jour le taux</button>
+                            <p class="rate-info">Mise à jour automatique toutes les heures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-conversions">
+                        <h3>Conversions rapides</h3>
+                        <div class="quick-grid">
+                            <div class="quick-item" data-euro="1">
+                                <span class="quick-euro">1 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">160 ¥</span>
+                            </div>
+                            <div class="quick-item" data-euro="5">
+                                <span class="quick-euro">5 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">800 ¥</span>
+                            </div>
+                            <div class="quick-item" data-euro="10">
+                                <span class="quick-euro">10 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">1600 ¥</span>
+                            </div>
+                            <div class="quick-item" data-euro="20">
+                                <span class="quick-euro">20 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">3200 ¥</span>
+                            </div>
+                            <div class="quick-item" data-euro="50">
+                                <span class="quick-euro">50 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">8000 ¥</span>
+                            </div>
+                            <div class="quick-item" data-euro="100">
+                                <span class="quick-euro">100 €</span>
+                                <span class="quick-arrow">→</span>
+                                <span class="quick-yen">16000 ¥</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="frais.js"></script>
+</body>
+</html> 
