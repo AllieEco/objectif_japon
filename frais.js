@@ -11,16 +11,6 @@ const updateRateBtn = document.getElementById('update-rate');
 const currentRateSpan = document.getElementById('current-rate');
 const quickItems = document.querySelectorAll('.quick-item');
 
-// Initialisation
-document.addEventListener('DOMContentLoaded', function() {
-    // Charger le taux de change au démarrage
-    fetchExchangeRate();
-    setupEventListeners();
-    
-    // Mise à jour automatique toutes les heures
-    setInterval(fetchExchangeRate, 3600000); // 1 heure = 3600000 ms
-});
-
 // Configuration des événements
 function setupEventListeners() {
     // Conversion Euro vers Yen
@@ -255,6 +245,256 @@ function formatCurrency(amount, currency = 'EUR') {
     return amount.toString();
 }
 
+// Gestion des dépenses
+let expenses = JSON.parse(localStorage.getItem('japanExpenses')) || [];
+
+// Éléments DOM pour les dépenses
+const expenseNameInput = document.getElementById('expense-name');
+const expenseDateInput = document.getElementById('expense-date');
+const expenseCityInput = document.getElementById('expense-city');
+const expenseCategorySelect = document.getElementById('expense-category');
+const expenseAmountYenInput = document.getElementById('expense-amount-yen');
+const expenseAmountEuroInput = document.getElementById('expense-amount-euro');
+const expensePaymentSelect = document.getElementById('expense-payment');
+const expenseCommentTextarea = document.getElementById('expense-comment');
+const addExpenseBtn = document.getElementById('add-expense-btn');
+const clearFormBtn = document.getElementById('clear-form-btn');
+const expensesContainer = document.getElementById('expenses-container');
+const totalYenSpan = document.getElementById('total-yen');
+const totalEuroSpan = document.getElementById('total-euro');
+const totalExpensesSpan = document.getElementById('total-expenses');
+
+// Initialisation des dépenses
+document.addEventListener('DOMContentLoaded', function() {
+    // Charger le taux de change au démarrage
+    fetchExchangeRate();
+    setupEventListeners();
+    setupExpenseEventListeners();
+    
+    // Mise à jour automatique toutes les heures
+    setInterval(fetchExchangeRate, 3600000); // 1 heure = 3600000 ms
+    
+    // Initialiser la date à aujourd'hui
+    expenseDateInput.value = new Date().toISOString().split('T')[0];
+    
+    // Charger et afficher les dépenses existantes
+    loadExpenses();
+    updateExpensesDisplay();
+});
+
+// Configuration des événements pour les dépenses
+function setupExpenseEventListeners() {
+    // Conversion automatique Yen vers Euro
+    expenseAmountYenInput.addEventListener('input', function() {
+        if (this.value && this.value > 0) {
+            const yens = parseInt(this.value);
+            const euros = yens / currentExchangeRate;
+            expenseAmountEuroInput.value = euros.toFixed(2);
+        } else {
+            expenseAmountEuroInput.value = '';
+        }
+    });
+    
+    // Ajouter une dépense
+    addExpenseBtn.addEventListener('click', addExpense);
+    
+    // Vider le formulaire
+    clearFormBtn.addEventListener('click', clearExpenseForm);
+    
+    // Validation en temps réel
+    expenseNameInput.addEventListener('input', validateForm);
+    expenseDateInput.addEventListener('input', validateForm);
+    expenseCityInput.addEventListener('input', validateForm);
+    expenseCategorySelect.addEventListener('change', validateForm);
+    expenseAmountYenInput.addEventListener('input', validateForm);
+    expensePaymentSelect.addEventListener('change', validateForm);
+}
+
+// Ajouter une nouvelle dépense
+function addExpense() {
+    if (!validateForm()) {
+        showNotification('Veuillez remplir tous les champs obligatoires', 'error');
+        return;
+    }
+    
+    const expense = {
+        id: Date.now(),
+        name: expenseNameInput.value.trim(),
+        date: expenseDateInput.value,
+        city: expenseCityInput.value.trim(),
+        category: expenseCategorySelect.value,
+        amountYen: parseInt(expenseAmountYenInput.value),
+        amountEuro: parseFloat(expenseAmountEuroInput.value),
+        payment: expensePaymentSelect.value,
+        comment: expenseCommentTextarea.value.trim(),
+        createdAt: new Date().toISOString()
+    };
+    
+    expenses.unshift(expense); // Ajouter au début de la liste
+    saveExpenses();
+    updateExpensesDisplay();
+    clearExpenseForm();
+    
+    showNotification(`Achat "${expense.name}" ajouté pour ${expense.amountYen} ¥`, 'success');
+}
+
+// Valider le formulaire
+function validateForm() {
+    const requiredFields = [
+        expenseNameInput,
+        expenseDateInput,
+        expenseCityInput,
+        expenseCategorySelect,
+        expenseAmountYenInput,
+        expensePaymentSelect
+    ];
+    
+    const isValid = requiredFields.every(field => {
+        if (field.type === 'select-one') {
+            return field.value !== '';
+        }
+        return field.value.trim() !== '';
+    });
+    
+    addExpenseBtn.disabled = !isValid;
+    return isValid;
+}
+
+// Vider le formulaire
+function clearExpenseForm() {
+    expenseNameInput.value = '';
+    expenseDateInput.value = new Date().toISOString().split('T')[0];
+    expenseCityInput.value = '';
+    expenseCategorySelect.value = '';
+    expenseAmountYenInput.value = '';
+    expenseAmountEuroInput.value = '';
+    expensePaymentSelect.value = '';
+    expenseCommentTextarea.value = '';
+    validateForm();
+}
+
+// Sauvegarder les dépenses dans le localStorage
+function saveExpenses() {
+    localStorage.setItem('japanExpenses', JSON.stringify(expenses));
+}
+
+// Charger les dépenses depuis le localStorage
+function loadExpenses() {
+    const saved = localStorage.getItem('japanExpenses');
+    if (saved) {
+        expenses = JSON.parse(saved);
+    }
+}
+
+// Mettre à jour l'affichage des dépenses
+function updateExpensesDisplay() {
+    if (expenses.length === 0) {
+        expensesContainer.innerHTML = '<p class="no-expenses">Aucun achat enregistré pour le moment</p>';
+    } else {
+        expensesContainer.innerHTML = expenses.map(expense => createExpenseHTML(expense)).join('');
+    }
+    
+    updateExpensesSummary();
+    
+    // Ajouter les événements de suppression
+    document.querySelectorAll('.delete-expense-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const expenseId = parseInt(this.dataset.expenseId);
+            deleteExpense(expenseId);
+        });
+    });
+}
+
+// Créer le HTML pour une dépense
+function createExpenseHTML(expense) {
+    const categoryIcons = {
+        'souvenir': '🎁',
+        'restaurant': '🍽️',
+        'konbini': '🏪',
+        'transport': '🚇',
+        'hotel': '🏨',
+        'activite': '🎯',
+        'shopping': '🛍️',
+        'autre': '📦'
+    };
+    
+    const paymentIcons = {
+        'especes': '💵',
+        'carte': '💳',
+        'suica': '🚇',
+        'paypay': '📱',
+        'autre': '💸'
+    };
+    
+    const formattedDate = new Date(expense.date).toLocaleDateString('fr-FR', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric'
+    });
+    
+    return `
+        <div class="expense-item" data-expense-id="${expense.id}">
+            <div class="expense-header">
+                <div>
+                    <div class="expense-title">${expense.name}</div>
+                    <div class="expense-date">${formattedDate}</div>
+                </div>
+                <div class="expense-amount">${expense.amountYen} ¥</div>
+            </div>
+            
+            <div class="expense-details">
+                <div class="expense-detail">
+                    <span>${categoryIcons[expense.category]}</span>
+                    <span>${expense.category}</span>
+                </div>
+                <div class="expense-detail">
+                    <span>🏙️</span>
+                    <span>${expense.city}</span>
+                </div>
+                <div class="expense-detail">
+                    <span>${paymentIcons[expense.payment]}</span>
+                    <span>${expense.payment}</span>
+                </div>
+                <div class="expense-detail">
+                    <span>€</span>
+                    <span>${expense.amountEuro.toFixed(2)} €</span>
+                </div>
+            </div>
+            
+            ${expense.comment ? `<div class="expense-comment">💭 ${expense.comment}</div>` : ''}
+            
+            <div class="expense-actions">
+                <button class="expense-action-btn delete delete-expense-btn" data-expense-id="${expense.id}">
+                    🗑️ Supprimer
+                </button>
+            </div>
+        </div>
+    `;
+}
+
+// Supprimer une dépense
+function deleteExpense(expenseId) {
+    const expense = expenses.find(e => e.id === expenseId);
+    if (expense) {
+        if (confirm(`Êtes-vous sûr de vouloir supprimer l'achat "${expense.name}" ?`)) {
+            expenses = expenses.filter(e => e.id !== expenseId);
+            saveExpenses();
+            updateExpensesDisplay();
+            showNotification(`Achat "${expense.name}" supprimé`, 'success');
+        }
+    }
+}
+
+// Mettre à jour le résumé des dépenses
+function updateExpensesSummary() {
+    const totalYen = expenses.reduce((sum, expense) => sum + expense.amountYen, 0);
+    const totalEuro = expenses.reduce((sum, expense) => sum + expense.amountEuro, 0);
+    
+    totalYenSpan.textContent = `${totalYen.toLocaleString()} ¥`;
+    totalEuroSpan.textContent = `(${totalEuro.toFixed(2)} €)`;
+    totalExpensesSpan.textContent = expenses.length;
+}
+
 // Export des fonctions pour utilisation externe
 window.currencyConverter = {
     convertEuroToYen: (euros) => Math.round(euros * currentExchangeRate),
@@ -262,4 +502,11 @@ window.currencyConverter = {
     getCurrentRate: () => currentExchangeRate,
     getLastUpdateTime: () => lastUpdateTime,
     updateRate: fetchExchangeRate
+};
+
+window.expenseTracker = {
+    addExpense: addExpense,
+    deleteExpense: deleteExpense,
+    getExpenses: () => expenses,
+    getTotalSpent: () => expenses.reduce((sum, expense) => sum + expense.amountYen, 0)
 }; 

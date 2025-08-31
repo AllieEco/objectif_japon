@@ -111,6 +111,104 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="expense-tracker">
+                        <h2>Suivi de mes Achats</h2>
+                        
+                        <div class="expense-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expense-name">Nom de l'achat *</label>
+                                    <input type="text" id="expense-name" placeholder="Ex: Onigiri au konbini" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expense-date">Date *</label>
+                                    <input type="date" id="expense-date" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expense-city">Ville *</label>
+                                    <input type="text" id="expense-city" placeholder="Ex: Tokyo, Osaka..." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expense-category">Type d'achat *</label>
+                                    <select id="expense-category" required>
+                                        <option value="">Choisir un type</option>
+                                        <option value="souvenir">🎁 Souvenir</option>
+                                        <option value="restaurant">🍽️ Restaurant</option>
+                                        <option value="konbini">🏪 Konbini</option>
+                                        <option value="transport">🚇 Transport</option>
+                                        <option value="hotel">🏨 Hôtel</option>
+                                        <option value="activite">🎯 Activité/Attraction</option>
+                                        <option value="shopping">🛍️ Shopping</option>
+                                        <option value="autre">📦 Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expense-amount-yen">Montant (¥) *</label>
+                                    <input type="number" id="expense-amount-yen" placeholder="0" min="0" step="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expense-amount-euro">Montant (€)</label>
+                                    <input type="number" id="expense-amount-euro" placeholder="0.00" min="0" step="0.01" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expense-payment">Type de paiement *</label>
+                                    <select id="expense-payment" required>
+                                        <option value="">Choisir un mode</option>
+                                        <option value="especes">💵 Espèces</option>
+                                        <option value="carte">💳 Carte bancaire</option>
+                                        <option value="suica">🚇 Suica/Pasmo</option>
+                                        <option value="paypay">📱 PayPay</option>
+                                        <option value="autre">💸 Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group full-width">
+                                <label for="expense-comment">Commentaire</label>
+                                <textarea id="expense-comment" placeholder="Ajoutez un commentaire sur cet achat..." rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" id="add-expense-btn" class="add-expense-btn">
+                                    <span class="btn-icon">➕</span>
+                                    <span class="btn-text">Ajouter l'achat</span>
+                                </button>
+                                <button type="button" id="clear-form-btn" class="clear-form-btn">
+                                    <span class="btn-icon">🗑️</span>
+                                    <span class="btn-text">Vider le formulaire</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="expenses-summary">
+                            <h3>Résumé des dépenses</h3>
+                            <div class="summary-stats">
+                                <div class="summary-item">
+                                    <span class="summary-label">Total dépensé :</span>
+                                    <span class="summary-value" id="total-yen">0 ¥</span>
+                                    <span class="summary-value" id="total-euro">(0 €)</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Nombre d'achats :</span>
+                                    <span class="summary-value" id="total-expenses">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="expenses-list">
+                            <h3>Liste des achats</h3>
+                            <div class="expenses-container" id="expenses-container">
+                                <p class="no-expenses">Aucun achat enregistré pour le moment</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
