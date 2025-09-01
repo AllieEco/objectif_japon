@@ -1,48 +1,117 @@
 # 🌸 Objectif Japon
 
-Un site web élégant pour suivre vos économies en vue de votre voyage au Japon, avec une esthétique pixel art japonaise et des animations de pétales de sakura.
+Site web pour planifier et suivre votre voyage au Japon. Gestion des économies, planification des étapes, suivi des dépenses et convertisseur de devises en temps réel.
 
-## ✨ Fonctionnalités
+## 📋 Fonctionnalités Principales
 
-- **Design pixel art japonais** : Esthétique inspirée des jeux vidéo 8-bit avec police Press Start 2P
-- **Animation de sakura** : Pétales de cerisier 🌸 qui tombent en continu sur toute la page
-- **Arrière-plan flouté** : Utilise l'image `assets/background.jpg` avec un effet de flou fixe
-- **Compte à rebours** : Décompte en temps réel jusqu'au départ (1er avril 2026)
-- **Suivi des économies** : Interface pour visualiser vos économies actuelles et votre objectif (3000€)
-- **Système de paliers** : 5 objectifs intermédiaires avec images personnalisées
-- **Boutons d'économie** : Économie quotidienne (+15€) et économie libre (montant personnalisé)
-- **Popup interactive** : Saisie de montant pour l'économie libre
-- **Navigation** : Header avec 3 sections (Stats, Voyage, Langue)
-- **Page Voyage** : 9 articles détaillés sur les destinations japonaises
-- **Articles interactifs** : Navigation fluide entre les articles avec boutons retour
-- **Barre de progression** : Affichage visuel de votre progression vers l'objectif
-- **Sauvegarde locale** : Vos données sont sauvegardées dans le navigateur
-- **Responsive** : S'adapte à tous les écrans
+### 🏠 Page d'Accueil (Stats)
+- **Compte à rebours** : Décompte automatique jusqu'au départ (1er avril 2026)
+- **Suivi des économies** : Visualisation de vos économies actuelles vs objectif (3000€)
+- **Système de paliers** : 5 objectifs intermédiaires avec progression visuelle
+- **Boutons d'économie** : 
+  - Économie quotidienne (+15€)
+  - Économie libre (montant personnalisé)
+- **Barre de progression** : Affichage visuel de votre avancement
+- **Sauvegarde automatique** : Vos données sont conservées dans le navigateur
 
-## 🎨 Design
+### ✈️ Page Voyage
+- **9 articles détaillés** sur les destinations japonaises
+- **Navigation fluide** entre les articles
+- **Informations pratiques** : transports, prix, conseils
+- **Boutons de retour** vers la page principale
 
-- **Typographie** : Police pixel art "Press Start 2P" pour les titres et chiffres, "Quicksand" et "Inter" pour le texte
-- **Couleurs** : Palette fuchsia (#e91e63) pour les accents, gris doux et blanc cassé
-- **Effets visuels** : Animations fluides, bordures arrondies, effets de verre dépoli
-- **Ambiance** : Moderne et zen, parfaite pour motiver vos économies
+### 💰 Page Frais (Nouvelle)
+- **Convertisseur de devises** : Euro ↔ Yen en temps réel
+- **API de taux de change** : Données réelles du marché
+- **Suivi des achats** : Enregistrement complet de vos dépenses
+- **Résumé des dépenses** : Totaux et statistiques
+- **Sauvegarde locale** : Vos achats sont conservés
 
-## 🚀 Utilisation
+## 🎯 Paliers d'Objectifs
 
+1. **✈️ Vol** : 800€
+2. **🏨 Hôtel** : 1600€  
+3. **🏯 Osaka** : 1800€
+4. **🍜 Restaurant** : 2400€
+5. **⚡ Shopping Pokemon** : 3000€
+
+## 📚 Articles de Voyage Disponibles
+
+### 🛬 Arrivée à Tokyo
+Guide complet de l'aéroport d'Haneda : terminaux, transports, services, conseils pratiques.
+
+### 🌃 Shibuya
+Le quartier le plus dynamique de Tokyo : intersection mythique, shopping, vie nocturne.
+
+### 👗 Harajuku
+Berceau de la mode alternative japonaise : cosplay, Lolita fashion, Takeshita Street.
+
+### 🏪 Les Konbini
+Les supérettes 24h/24 du Japon : services, produits, conseils d'utilisation.
+
+### 🚄 Le Shinkansen
+Le train à grande vitesse japonais : réservations, classes, conseils de voyage.
+
+### 🍜 Osaka
+La capitale gastronomique du Japon : street food, restaurants, quartiers.
+
+### 🎢 Universal Studios Japan
+Le parc d'attractions d'Osaka : attractions, billets, conseils de visite.
+
+### 🎮 Pokémon Center et Nintendo Shop
+Le Cyberspace Shibuya : boutiques officielles, produits exclusifs.
+
+### 🍡 Street Food sans viande
+Guide culinaire végétarien à Tokyo : restaurants, plats traditionnels.
+
+## 💰 Fonctionnalités du Suivi des Frais
+
+### Convertisseur de Devises
+- **Taux en temps réel** : API ExchangeRate-API
+- **Conversion automatique** : Euro ↔ Yen
+- **Conversions rapides** : Montants prédéfinis (1€, 5€, 10€, 20€, 50€, 100€)
+- **Mise à jour automatique** : Toutes les heures
+- **Raccourcis clavier** : Ctrl+1 (€→¥), Ctrl+2 (¥→€), Ctrl+R (mise à jour)
+
+### Suivi des Achats
+- **Formulaire complet** : nom, date, ville, type, montant, paiement, commentaire
+- **Types d'achats** : souvenir, restaurant, konbini, transport, hôtel, activité, shopping, autre
+- **Modes de paiement** : espèces, carte, Suica/Pasmo, PayPay, autre
+- **Conversion automatique** : Montant en Yen → Euro calculé automatiquement
+- **Validation en temps réel** : Champs obligatoires vérifiés
+- **Résumé des dépenses** : Total en Yen et Euro, nombre d'achats
+- **Liste des achats** : Affichage détaillé avec possibilité de suppression
+
+## 🚀 Comment Utiliser
+
+### Page d'Accueil
 1. Ouvrez `index.html` dans votre navigateur
-2. Utilisez les boutons d'économie pour ajouter des montants :
-   - **Économie quotidienne** : +15€ automatiquement
-   - **Économie libre** : Montant personnalisé via popup
-3. Suivez votre progression vers les 5 paliers d'objectifs
-4. Votre compte à rebours se met à jour automatiquement
-5. Vos données sont automatiquement sauvegardées
+2. Utilisez les boutons d'économie pour ajouter des montants
+3. Suivez votre progression vers les paliers d'objectifs
+4. Vos données sont automatiquement sauvegardées
 
-## 📁 Structure du projet
+### Page Voyage
+1. Cliquez sur "Voyage" dans la navigation
+2. Parcourez les articles selon vos intérêts
+3. Utilisez le bouton "Retour au voyage" pour naviguer
+
+### Page Frais
+1. Cliquez sur "Frais" dans la navigation
+2. **Convertisseur** : Saisissez un montant et utilisez les boutons de conversion
+3. **Suivi des achats** :
+   - Remplissez le formulaire avec les détails de votre achat
+   - Cliquez sur "Ajouter l'achat"
+   - Consultez le résumé et la liste de vos dépenses
+4. Vos achats sont automatiquement sauvegardés
+
+## 📁 Structure du Projet
 
 ```
 objectif_japon/
-├── index.html          # Page d'accueil avec suivi des économies
-├── voyage.html         # Page des articles de voyage
-├── articles/           # Dossier contenant tous les articles
+├── index.html              # Page d'accueil avec suivi des économies
+├── voyage.html             # Page des articles de voyage
+├── frais.html              # Page de suivi des frais et convertisseur
+├── articles/               # Dossier contenant tous les articles
 │   ├── article-haneda.html
 │   ├── article-shibuya.html
 │   ├── article-harajuku.html
@@ -52,51 +121,64 @@ objectif_japon/
 │   ├── article-universal.html
 │   ├── article-pokemon.html
 │   └── article-food.html
-├── styles.css          # Styles CSS
-├── script.js           # JavaScript
-├── assets/             # Images et ressources
-└── README.md           # Documentation
+├── styles.css              # Styles CSS
+├── script.js               # JavaScript principal
+├── frais.js                # JavaScript pour la page frais
+├── assets/                 # Images et ressources
+│   ├── background.jpg
+│   ├── 1step.png à 5step.png
+│   └── images des articles
+└── README.md               # Documentation
 ```
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies Utilisées
 
-- **HTML5** : Structure sémantique
-- **CSS3** : Animations, effets visuels, responsive design
-- **JavaScript ES6+** : Interactions, animations, gestion des données
+- **HTML5** : Structure sémantique et accessibilité
+- **CSS3** : Styles, animations, responsive design
+- **JavaScript ES6+** : Interactions, gestion des données, API
 - **LocalStorage** : Sauvegarde des données utilisateur
+- **ExchangeRate-API** : Taux de change en temps réel
 
-## 🎯 Fonctionnalités à venir
+## 💾 Sauvegarde des Données
+
+- **Économies** : Sauvegardées automatiquement dans le navigateur
+- **Achats** : Sauvegardés dans le localStorage
+- **Taux de change** : Mis à jour automatiquement toutes les heures
+- **Pas de perte de données** entre les sessions
+
+## 📱 Compatibilité
+
+- **Navigateurs** : Chrome, Firefox, Safari, Edge
+- **Responsive** : S'adapte aux écrans mobile, tablette et desktop
+- **Hors ligne** : Fonctionne sans connexion (sauf mise à jour des taux)
+
+## 🔧 Fonctionnalités Avancées
+
+### Raccourcis Clavier (Page Frais)
+- `Ctrl+1` : Conversion Euro → Yen
+- `Ctrl+2` : Conversion Yen → Euro
+- `Ctrl+R` : Mise à jour du taux de change
+
+### Validation Automatique
+- Champs obligatoires vérifiés en temps réel
+- Boutons désactivés tant que le formulaire n'est pas complet
+- Messages d'erreur clairs
+
+### Gestion des Erreurs
+- Fallback en cas d'erreur API
+- Conservation des données précédentes
+- Notifications informatives
+
+## 🎯 Fonctionnalités à Venir
 
 - [ ] Section "Langue" dans la navigation
 - [ ] Historique des transactions
+- [ ] Export des données en CSV/PDF
+- [ ] Personnalisation des paliers d'objectifs
+- [ ] Statistiques détaillées par catégorie
 - [ ] Notifications de progression
-- [ ] Export des données
-- [ ] Personnalisation des paliers
-- [ ] Statistiques détaillées
-
-## 🌟 Inspiration
-
-Ce projet s'inspire de l'esthétique des jeux vidéo japonais classiques et de la beauté des cerisiers en fleur, créant une expérience immersive pour motiver vos économies vers votre voyage de rêve au Japon.
-
-## 📊 Paliers d'objectifs
-
-- **✈️ Vol** : 800€
-- **🏨 Hôtel** : 1600€  
-- **🏯 Osaka** : 1800€
-- **🍜 Restaurant** : 2400€
-- **⚡ Shopping Pokemon** : 3000€
-
-## 📚 Articles de voyage disponibles
-
-- **🛬 Arrivée à Tokyo** : Guide complet de l'aéroport d'Haneda
-- **🌃 Shibuya** : Le quartier le plus dynamique de Tokyo
-- **👗 Harajuku** : Berceau de la mode alternative japonaise
-- **🏪 Les Konbini** : Les supérettes 24h/24 du Japon
-- **🚄 Le Shinkansen** : Le train à grande vitesse japonais
-- **🍜 Osaka** : La capitale gastronomique du Japon
-- **🎢 Universal Studios Japan** : Le parc d'attractions d'Osaka
-- **🎮 Pokémon Center et Nintendo Shop** : Le Cyberspace Shibuya
-- **🍡 Street Food sans viande** : Guide culinaire végétarien à Tokyo
+- [ ] Mode sombre/clair
+- [ ] Synchronisation cloud
 
 ---
 
