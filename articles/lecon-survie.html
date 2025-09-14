@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressions de Survie - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Expressions de survie - Les phrases qui sauvent en voyage</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>🆘 Quand tu ne comprends RIEN</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Nihongo ga wakarimasen" (日本語が分かりません)</p>
+                            <p class="fr-phrase">→ "Je ne comprends pas le japonais"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Eigo wo hanasemasu ka?" (英語を話せますか？)</p>
+                            <p class="fr-phrase">→ "Parlez-vous anglais ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yukkuri hanashite kudasai" (ゆっくり話してください)</p>
+                            <p class="fr-phrase">→ "Parlez plus lentement s'il vous plaît"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🗺️ Se repérer et demander son chemin</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Michi ni mayoimashita" (道に迷いました)</p>
+                            <p class="fr-phrase">→ "Je suis perdu/e"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"_____ wa doko desu ka?" (_____はどこですか？)</p>
+                            <p class="fr-phrase">→ "Où est _____ ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Koko wa doko desu ka?" (ここはどこですか？)</p>
+                            <p class="fr-phrase">→ "Où sommes-nous ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>💰 Argent et paiements</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Ikura desu ka?" (いくらですか？)</p>
+                            <p class="fr-phrase">→ "Combien ça coûte ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kurejitto kaado wa tsukaemasu ka?" (クレジットカードは使えますか？)</p>
+                            <p class="fr-phrase">→ "Puis-je payer par carte ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🆘 Situations d'urgence</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Tasukete!" (助けて!)</p>
+                            <p class="fr-phrase">→ "À l'aide !"</p>
+                        </div>
+                         <div class="phrase">
+                            <p class="jp-phrase">"Keisatsu wo yonde kudasai" (警察を呼んでください)</p>
+                            <p class="fr-phrase">→ "Appelez la police"</p>
+                        </div>
+                         <div class="phrase">
+                            <p class="jp-phrase">"Kyuukyuusha wo yonde kudasai" (救急車を呼んでください)</p>
+                            <p class="fr-phrase">→ "Appelez une ambulance"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🏥 Expressions médicales de base</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Itai desu" (痛いです)</p>
+                            <p class="fr-phrase">→ "J'ai mal"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Koko ga itai desu" (ここが痛いです)</p>
+                            <p class="fr-phrase">→ "J'ai mal ici" (en montrant)</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Netsu ga arimasu" (熱があります)</p>
+                            <p class="fr-phrase">→ "J'ai de la fièvre"</p>
+                        </div>
+                    </div>
+
+                    <div class="advice">
+                        <p><strong>🎯 Rappel :</strong> Les Japonais sont généralement très patients. N'ayez pas peur de faire des erreurs - l'effort compte plus que la perfection !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Nourriture Japonaise - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Guide complet de la nourriture japonaise</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>🍜 Plats principaux (Shushoku - 主食)</h3>
+                        <h4>Riz (Gohan - ご飯)</h4>
+                        <ul>
+                            <li>Gohan (ご飯) → Riz cuit / Repas en général</li>
+                            <li>Onigiri (おにぎり) → Boulettes de riz</li>
+                            <li>Chirashizushi (ちらし寿司) → Riz aux fruits de mer</li>
+                            <li>Takoyaki (たこ焼き) → Boulettes de poulpe (Osaka)</li>
+                            <li>Omurice (オムライス) → Riz frit dans une omelette</li>
+                        </ul>
+
+                        <h4>Nouilles (Men - 麺)</h4>
+                        <ul>
+                            <li>Ramen (ラーメン) → Nouilles dans un bouillon</li>
+                            <li>Udon (うどん) → Nouilles épaisses de blé</li>
+                            <li>Soba (そば) → Nouilles de sarrasin</li>
+                            <li>Somen (そうめん) → Nouilles fines d'été</li>
+                            <li>Yakisoba (焼きそば) → Nouilles sautées</li>
+                            <li>Yakiudon (焼きうどん) → Udon sautés</li>
+                        </ul>
+
+                        <h4>Sushi et poissons</h4>
+                        <ul>
+                            <li>Sushi (寿司) → Riz vinaigré + poisson</li>
+                            <li>Sashimi (刺身) → Poisson cru sans riz</li>
+                            <li>Maki (巻き) → Sushi roulé</li>
+                            <li>Nigiri (握り) → Sushi pressé à la main</li>
+                            <li>Temaki (手巻き) → Cône d'algue</li>
+                            <li>Unagi (うなぎ) → Anguille grillée</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🥘 Plats cuisinés populaires</h3>
+                        <h4>Viandes</h4>
+                        <ul>
+                            <li>Yakiniku (焼肉) → Barbecue coréen-japonais</li>
+                            <li>Yakitori (焼き鳥) → Brochettes de poulet</li>
+                            <li>Tonkatsu (とんかつ) → Porc pané frit</li>
+                            <li>Karaage (から揚げ) → Poulet frit japonais</li>
+                            <li>Teriyaki (照り焼き) → Grillé sauce sucrée</li>
+                            <li>Sukiyaki (すき焼き) → Fondue de bœuf sucrée</li>
+                            <li>Shabu-shabu (しゃぶしゃぶ) → Fondue japonaise</li>
+                        </ul>
+                        <h4>Plats à base d'œufs</h4>
+                        <ul>
+                            <li>Tamagoyaki (卵焼き) → Omelette sucrée</li>
+                            <li>Oyakodon (親子丼) → Bol de riz poulet-œuf</li>
+                            <li>Katsudon (カツ丼) → Bol de riz porc pané-œuf</li>
+                        </ul>
+                        <h4>Légumes et tofu</h4>
+                        <ul>
+                            <li>Tempura (天ぷら) → Beignets de légumes/crevettes</li>
+                            <li>Agedashi tofu (揚げ出し豆腐) → Tofu frit</li>
+                            <li>Yasai itame (野菜炒め) → Légumes sautés</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lesson-section">
+                        <h3>🍱 Formats de repas</h3>
+                        <ul>
+                            <li>Bentou (弁当) → Repas dans une boîte</li>
+                            <li>Teishoku (定食) → Menu complet avec riz, soupe, légumes</li>
+                            <li>Kaiseki (懐石) → Cuisine haute gastronomie</li>
+                            <li>Izakaya (居酒屋) → Bar à tapas japonais</li>
+                            <li>Tabehoudai (食べ放題) → Buffet à volonté</li>
+                            <li>Nomihoudai (飲み放題) → Boissons à volonté</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🥢 Condiments et assaisonnements</h3>
+                        <ul>
+                            <li>Shoyu (醤油) → Sauce soja</li>
+                            <li>Miso (味噌) → Pâte de soja fermentée</li>
+                            <li>Wasabi (わさび) → Raifort japonais</li>
+                            <li>Gari (ガリ) → Gingembre mariné</li>
+                            <li>Ponzu (ポン酢) → Sauce agrumes-soja</li>
+                            <li>Mayonēzu (マヨネーズ) → Mayonnaise japonaise</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🍮 Desserts (Dezāto - デザート)</h3>
+                        <h4>Traditionnels</h4>
+                        <ul>
+                            <li>Mochi (餅) → Gâteau de riz gluant</li>
+                            <li>Dorayaki (どら焼き) → Pancakes fourrés</li>
+                            <li>Taiyaki (たい焼き) → Pâtisserie en forme de poisson</li>
+                            <li>Wagashi (和菓子) → Confiseries traditionnelles</li>
+                        </ul>
+                        <h4>Modernes</h4>
+                        <ul>
+                            <li>Purin (プリン) → Crème caramel</li>
+                            <li>Keeki (ケーキ) → Gâteau occidental</li>
+                            <li>Aisu (アイス) → Glace</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lesson-section">
+                        <h3>🍵 Boissons (Nomimono - 飲み物)</h3>
+                        <h4>Chaudes</h4>
+                        <ul>
+                            <li>Ocha (お茶) → Thé vert</li>
+                            <li>Matcha (抹茶) → Thé vert en poudre</li>
+                            <li>Kōhii (コーヒー) → Café</li>
+                        </ul>
+                        <h4>Froides</h4>
+                        <ul>
+                            <li>Mizu (水) → Eau</li>
+                            <li>Ramune (ラムネ) → Limonade japonaise</li>
+                            <li>Calpis (カルピス) → Boisson lactée</li>
+                        </ul>
+                        <h4>Alcoolisées</h4>
+                        <ul>
+                            <li>Sake (酒/日本酒) → Alcool de riz</li>
+                            <li>Bīru (ビール) → Bière</li>
+                            <li>Umeshu (梅酒) → Liqueur de prune</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🗣️ Expressions essentielles au restaurant</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Osusume wa nan desu ka?" (おすすめは何ですか？)</p>
+                            <p class="fr-phrase">→ "Que recommandez-vous ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Niku wa taberemasen" (肉は食べられません)</p>
+                            <p class="fr-phrase">→ "Je ne mange pas de viande"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Karai mono wa sukidesu" (辛いものは好きです)</p>
+                            <p class="fr-phrase">→ "J'aime les plats épicés"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🍴 Étiquette à table</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Itadakimasu" (いただきます)</p>
+                            <p class="fr-phrase">→ Se dit AVANT de manger (obligatoire !)</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Gochisōsama deshita" (ごちそうさまでした)</p>
+                            <p class="fr-phrase">→ Se dit APRÈS avoir mangé (obligatoire !)</p>
+                        </div>
+                         <div class="phrase">
+                            <p class="jp-phrase">"Oishii desu!" (美味しいです!)</p>
+                            <p class="fr-phrase">→ "C'est délicieux !"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="advice">
+                        <p><strong>🍽️ Conseil cultural :</strong> Au Japon, faire du bruit en mangeant les nouilles (surtout ramen et soba) est non seulement acceptable, mais c'est un signe d'appréciation ! N'hésite pas à "slurper" tes nouilles 🍜</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 

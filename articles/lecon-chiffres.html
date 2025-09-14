@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiffres et Compteurs - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Les chiffres et compteurs en japonais</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>Les chiffres de base</h3>
+                        <table class="lesson-table">
+                            <thead>
+                                <tr>
+                                    <th>Chiffre</th>
+                                    <th>Japonais</th>
+                                    <th>Romaji</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>一</td><td>ichi</td></tr>
+                                <tr><td>2</td><td>二</td><td>ni</td></tr>
+                                <tr><td>3</td><td>三</td><td>san</td></tr>
+                                <tr><td>4</td><td>四</td><td>yon/shi</td></tr>
+                                <tr><td>5</td><td>五</td><td>go</td></tr>
+                                <tr><td>6</td><td>六</td><td>roku</td></tr>
+                                <tr><td>7</td><td>七</td><td>nana/shichi</td></tr>
+                                <tr><td>8</td><td>八</td><td>hachi</td></tr>
+                                <tr><td>9</td><td>九</td><td>kyuu</td></tr>
+                                <tr><td>10</td><td>十</td><td>juu</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Compteurs selon ce que l'on compte</h3>
+                        <p>👥 <strong>Personnes → -nin (人)</strong></p>
+                        <ul>
+                            <li>1 personne : hitori (ひとり) ⚠️ Exception !</li>
+                            <li>2 personnes : futari (ふたり) ⚠️ Exception !</li>
+                            <li>3 personnes : san-nin (三人)</li>
+                            <li>4 personnes : yo-nin (四人)</li>
+                            <li>5 personnes : go-nin (五人)</li>
+                        </ul>
+                        <p>🐾 <strong>Animaux → -hiki/piki/biki (匹)</strong></p>
+                        <p>🏢 <strong>Objets longs/cylindriques → -hon/pon/bon (本)</strong> (Bouteilles, stylos, parapluies...)</p>
+                        <p>📄 <strong>Objets plats → -mai (枚)</strong> (Papiers, photos, t-shirts...)</p>
+                        <p>🚗 <strong>Véhicules/machines → -dai (台)</strong> (Voitures, ordinateurs, vélos...)</p>
+                        <p>📚 <strong>Livres/volumes → -satsu (冊)</strong></p>
+                        <p>☕ <strong>Boissons/tasses → -hai/pai/bai (杯)</strong></p>
+                        <p>🏠 <strong>Maisons/bâtiments → -ken (軒)</strong></p>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Compteur universel (quand on ne sait pas)</h3>
+                        <p>Objets généraux → -tsu (つ) ⚠️ Seulement jusqu'à 10 !</p>
+                        <ul>
+                            <li>1 : hitotsu (ひとつ)</li>
+                            <li>2 : futatsu (ふたつ)</li>
+                            <li>3 : mittsu (みっつ)</li>
+                            <li>4 : yottsu (よっつ)</li>
+                            <li>5 : itsutsu (いつつ)</li>
+                            <li>6 : muttsu (むっつ)</li>
+                            <li>7 : nanatsu (ななつ)</li>
+                            <li>8 : yattsu (やっつ)</li>
+                            <li>9 : kokonotsu (ここのつ)</li>
+                            <li>10 : too (とお)</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Phrases utiles avec les compteurs</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Biiru wo ni-hai kudasai" (ビールを二杯ください)</p>
+                            <p class="fr-phrase">→ "2 bières s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Futari desu" (二人です)</p>
+                            <p class="fr-phrase">→ "Nous sommes 2 personnes"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kore wo mittsu kudasai" (これをみっつください)</p>
+                            <p class="fr-phrase">→ "3 de ceci s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Hitotsu ikura desu ka?" (ひとつ いくらですか？)</p>
+                            <p class="fr-phrase">→ "Combien coûte une unité ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Règles de transformation importantes</h3>
+                        <p>⚠️ Attention aux changements de sons :</p>
+                        <table class="lesson-table">
+                            <thead>
+                                <tr>
+                                    <th>Base</th><th>1</th><th>3</th><th>6</th><th>8</th><th>10</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>-hiki</td><td>ip-piki</td><td>san-biki</td><td>rop-piki</td><td>hap-piki</td><td>jup-piki</td></tr>
+                                <tr><td>-hon</td><td>ip-pon</td><td>san-bon</td><td>rop-pon</td><td>hap-pon</td><td>jup-pon</td></tr>
+                                <tr><td>-hai</td><td>ip-pai</td><td>san-bai</td><td>rop-pai</td><td>hap-pai</td><td>jup-pai</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="advice">
+                        <p><strong>💡 Astuce :</strong> Si tu ne connais pas le bon compteur, utilise -tsu jusqu'à 10, puis les chiffres normaux après.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 

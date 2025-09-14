@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide du Shopping - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Guide du shopping au Japon</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>🛍️ Types de magasins au Japon</h3>
+                        <ul>
+                            <li><strong>Depāto (デパート) :</strong> Grands magasins chics (Takashimaya, Mitsukoshi).</li>
+                            <li><strong>Don Quijote (ドン・キホーテ) :</strong> Le bazar japonais ouvert 24h/24.</li>
+                            <li><strong>100-en shops (100円ショップ) :</strong> Tout à 110 yens (Daiso, Seria).</li>
+                            <li><strong>Combini (コンビニ) :</strong> Supérettes 24h/24 (7-Eleven, FamilyMart).</li>
+                        </ul>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🗣️ Phrases essentielles pour faire du shopping</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kore wa ikura desu ka?" (これはいくらですか？)</p>
+                            <p class="fr-phrase">→ "Combien coûte ceci ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Hoka no iro wa arimasu ka?" (他の色はありますか？)</p>
+                            <p class="fr-phrase">→ "Avez-vous d'autres couleurs ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Essayer des vêtements</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Shichaku shite mo ii desu ka?" (試着してもいいですか？)</p>
+                            <p class="fr-phrase">→ "Puis-je l'essayer ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Shichakushitsu wa doko desu ka?" (試着室はどこですか？)</p>
+                            <p class="fr-phrase">→ "Où sont les cabines d'essayage ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>💳 Paiements</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kurejitto kaado wa tsukaemasu ka?" (クレジットカードは使えますか？)</p>
+                            <p class="fr-phrase">→ "Puis-je payer par carte ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Menzei desu ka?" (免税ですか？)</p>
+                            <p class="fr-phrase">→ "Est-ce détaxé ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🎁 Services et emballages</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Purezento you ni tsutsunde kudasai" (プレゼント用に包んでください)</p>
+                            <p class="fr-phrase">→ "Emballez-le comme un cadeau s'il vous plaît"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>🛒 Shopping par catégories</h3>
+                         <div class="phrase">
+                            <p class="jp-phrase">"Omiyage wo sagashite imasu" (お土産を探しています)</p>
+                            <p class="fr-phrase">→ "Je cherche des souvenirs"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="advice">
+                        <p><strong>🎯 Lieux de shopping incontournables à Tokyo :</strong> Shibuya (mode jeune), Harajuku (street fashion), Ginza (luxe), Akihabara (électronique, manga).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 

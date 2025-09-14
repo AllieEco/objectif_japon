@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langue - Objectif Japon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="title-container">
+            <h1 class="main-title">Leçons de Japonais</h1>
+            <p class="subtitle">Apprenez les bases pour votre voyage</p>
+        </div>
+        
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="voyage-content">
+                    <h2>Thèmes</h2>
+                    
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-restaurant.html'">
+                        <div class="article-image">
+                            <img src="assets/food.jpg" alt="Nourriture japonaise">
+                        </div>
+                        <div class="article-text">
+                            <h3>Au Restaurant</h3>
+                            <p>Apprenez les phrases essentielles pour commander à manger, demander l'addition, et interagir avec le personnel dans un restaurant japonais.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-nourriture.html'">
+                        <div class="article-image">
+                            <img src="assets/food.jpg" alt="Nourriture japonaise">
+                        </div>
+                        <div class="article-text">
+                            <h3>Guide de la Nourriture Japonaise</h3>
+                            <p>Explorez le vocabulaire culinaire japonais : des différents types de ramen aux sucreries traditionnelles, sachez quoi commander.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-hotel.html'">
+                        <div class="article-image">
+                            <img src="assets/osaka.jpg" alt="Hôtel au Japon">
+                        </div>
+                        <div class="article-text">
+                            <h3>À l'Hôtel</h3>
+                            <p>Du check-in au check-out, découvrez les expressions indispensables pour communiquer avec le personnel de votre hôtel et gérer les situations courantes.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-chiffres.html'">
+                        <div class="article-image">
+                            <img src="assets/konbini.jpg" alt="Chiffres et compteurs">
+                        </div>
+                        <div class="article-text">
+                            <h3>Chiffres et Compteurs</h3>
+                            <p>Apprenez à compter et à utiliser les compteurs spécifiques pour les personnes, les objets ou les boissons, une compétence clé pour le shopping et les restaurants.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-konbini.html'">
+                        <div class="article-image">
+                            <img src="assets/konbini.jpg" alt="Konbini">
+                        </div>
+                        <div class="article-text">
+                            <h3>Guide de survie pour les Konbini</h3>
+                            <p>Maîtrisez l'art du konbini : de la demande pour réchauffer votre bento au déchiffrage des services disponibles 24h/24.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-survie.html'">
+                        <div class="article-image">
+                            <img src="assets/shibuya.jpg" alt="Voyageur perdu">
+                        </div>
+                        <div class="article-text">
+                            <h3>Expressions de Survie</h3>
+                            <p>Les phrases qui sauvent : se repérer, demander de l'aide, gérer les urgences et surmonter la barrière de la langue quand on est perdu.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-preview" onclick="window.location.href='articles/lecon-shopping.html'">
+                        <div class="article-image">
+                            <img src="assets/pokemon.jpg" alt="Shopping au Japon">
+                        </div>
+                        <div class="article-text">
+                            <h3>Guide du Shopping</h3>
+                            <p>Des grands magasins de luxe aux bazars ouverts 24h/24, apprenez les phrases clés pour trouver ce que vous cherchez, demander les prix et payer.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

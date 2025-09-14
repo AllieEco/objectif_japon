@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Au Restaurant - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Phrases essentielles pour les restaurants au Japon</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>À l'arrivée</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Sumimasen, [nombre] nin desu" (すみません、[nombre]人です)</p>
+                            <p class="fr-phrase">→ "Excusez-moi, nous sommes [nombre] personnes"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yoyaku wo shite imasu" (予約をしています)</p>
+                            <p class="fr-phrase">→ "J'ai une réservation"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yoyaku wa arimasen" (予約はありません)</p>
+                            <p class="fr-phrase">→ "Je n'ai pas de réservation"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Pour commander</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Sumimasen!" (すみません!)</p>
+                            <p class="fr-phrase">→ Pour appeler le serveur</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kore wo kudasai" (これをください)</p>
+                            <p class="fr-phrase">→ "Je voudrais ceci" (en pointant le menu)</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Osusume wa nan desu ka?" (おすすめは何ですか？)</p>
+                            <p class="fr-phrase">→ "Qu'est-ce que vous recommandez ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Mizu wo kudasai" (水をください)</p>
+                            <p class="fr-phrase">→ "De l'eau s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Biiru wo kudasai" (ビールをください)</p>
+                            <p class="fr-phrase">→ "Une bière s'il vous plaît"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson-section">
+                        <h3>Pour refuser poliment</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kekkou desu" (結構です)</p>
+                            <p class="fr-phrase">→ "Non merci / Ça va comme ça"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Daijoubu desu" (大丈夫です)</p>
+                            <p class="fr-phrase">→ "Ça va / C'est bon"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Arigatou gozaimasu ga, kekkou desu" (ありがとうございますが、結構です)</p>
+                            <p class="fr-phrase">→ "Merci beaucoup, mais non merci"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Restrictions alimentaires</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Bejitarian desu" (ベジタリアンです)</p>
+                            <p class="fr-phrase">→ "Je suis végétarien/ne"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Niku wa taberemasen" (肉は食べられません)</p>
+                            <p class="fr-phrase">→ "Je ne mange pas de viande"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Arerugii ga arimasu" (アレルギーがあります)</p>
+                            <p class="fr-phrase">→ "J'ai des allergies"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Karai mono wa dame desu" (辛いものはだめです)</p>
+                            <p class="fr-phrase">→ "Je ne supporte pas les plats épacés"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Pendant le repas</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Oishii desu!" (美味しいです!)</p>
+                            <p class="fr-phrase">→ "C'est délicieux !"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Mou sukoshi kudasai" (もう少しください)</p>
+                            <p class="fr-phrase">→ "Un peu plus s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Onaka ippai desu" (お腹いっぱいです)</p>
+                            <p class="fr-phrase">→ "Je suis rassasié/e"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Pour payer</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Okaikei wo onegaishimasu" (お会計をお願いします)</p>
+                            <p class="fr-phrase">→ "L'addition s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Betsubetsu ni onegaishimasu" (別々にお願いします)</p>
+                            <p class="fr-phrase">→ "Séparément s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Issho ni onegaishimasu" (一緒にお願いします)</p>
+                            <p class="fr-phrase">→ "Ensemble s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kurejitto kaado de" (クレジットカードで)</p>
+                            <p class="fr-phrase">→ "Par carte de crédit"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>En partant</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Gochisousama deshita" (ごちそうさまでした)</p>
+                            <p class="fr-phrase">→ "Merci pour ce délicieux repas" (à dire en partant)</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Arigatou gozaimashita" (ありがとうございました)</p>
+                            <p class="fr-phrase">→ "Merci beaucoup"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Phrases d'urgence</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Toire wa doko desu ka?" (トイレはどこですか？)</p>
+                            <p class="fr-phrase">→ "Où sont les toilettes ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Wakarimasen" (分かりません)</p>
+                            <p class="fr-phrase">→ "Je ne comprends pas"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Eigo wo hanasemasu ka?" (英語を話せますか？)</p>
+                            <p class="fr-phrase">→ "Parlez-vous anglais ?"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="advice">
+                        <p><strong>Conseil :</strong> Garde cette liste dans ton téléphone ! La plupart des serveurs apprécient vraiment l'effort, même si ta prononciation n'est pas parfaite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 

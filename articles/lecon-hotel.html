@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À l'Hôtel - Objectif Japon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Montserrat:wght@700;800;900&family=Orbitron:wght@400;700;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div class="sakura-container" id="sakuraContainer"></div>
+    
+    <header class="header">
+        <nav class="nav-menu">
+            <button class="nav-button" data-section="stats" onclick="window.location.href='../index.html'">
+                <span class="nav-icon">📊</span>
+                <span class="nav-text">Stats</span>
+            </button>
+            <button class="nav-button" data-section="frais" onclick="window.location.href='../frais.html'">
+                <span class="nav-icon">💰</span>
+                <span class="nav-text">Frais</span>
+            </button>
+            <button class="nav-button" data-section="voyage" onclick="window.location.href='../voyage.html'">
+                <span class="nav-icon">✈️</span>
+                <span class="nav-text">Voyage</span>
+            </button>
+            <button class="nav-button active" data-section="langue" onclick="window.location.href='../langue.html'">
+                <span class="nav-icon">🗣️</span>
+                <span class="nav-text">Langue</span>
+            </button>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="content-section">
+            <div class="pixel-border">
+                <div class="langue-content">
+                    <div class="back-button-container">
+                        <button class="back-button" onclick="window.location.href='../langue.html'">
+                            <span class="back-icon">←</span>
+                            <span class="back-text">Retour aux leçons</span>
+                        </button>
+                    </div>
+                    <h2>Phrases essentielles pour les hôtels au Japon</h2>
+                    
+                    <div class="lesson-section">
+                        <h3>À l'arrivée / Check-in</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Konbanwa / Konnichiwa" (こんばんは / こんにちは)</p>
+                            <p class="fr-phrase">→ "Bonsoir / Bonjour"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yoyaku wo shite imasu" (予約をしています)</p>
+                            <p class="fr-phrase">→ "J'ai une réservation"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"[Nom] de yoyaku wo shite imasu" ([nom]で予約をしています)</p>
+                            <p class="fr-phrase">→ "J'ai une réservation au nom de [nom]"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Chekku-in wo onegaishimasu" (チェックインをお願いします)</p>
+                            <p class="fr-phrase">→ "Je voudrais faire le check-in"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Passupooto desu" (パスポートです)</p>
+                            <p class="fr-phrase">→ "Voici mon passeport"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Demander des informations</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Heya no bangou wa nan desu ka?" (部屋の番号は何ですか？)</p>
+                            <p class="fr-phrase">→ "Quel est le numéro de ma chambre ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Wi-Fi no passuwaado wo oshiete kudasai" (Wi-Fiのパスワードを教えてください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous me donner le mot de passe Wi-Fi ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Choushoku wa nanji kara desu ka?" (朝食は何時からですか？)</p>
+                            <p class="fr-phrase">→ "À quelle heure commence le petit-déjeuner ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Chekku-auto wa nanji desu ka?" (チェックアウトは何時ですか？)</p>
+                            <p class="fr-phrase">→ "À quelle heure est le check-out ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Chikatetsu no eki wa doko desu ka?" (地下鉄の駅はどこですか？)</p>
+                            <p class="fr-phrase">→ "Où est la station de métro ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Demander de l'aide</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Sumimasen, tetsudatte kudasai" (すみません、手伝ってください)</p>
+                            <p class="fr-phrase">→ "Excusez-moi, pouvez-vous m'aider ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Nimotsu wo heya ni hakobi kudasai" (荷物を部屋に運んでください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous monter mes bagages dans la chambre ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Takushii wo yonde kudasai" (タクシーを呼んでください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous appeler un taxi ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Chizu wo kudasai" (地図をください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous me donner une carte ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Problèmes dans la chambre</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Heya ni mondai ga arimasu" (部屋に問題があります)</p>
+                            <p class="fr-phrase">→ "Il y a un problème dans la chambre"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Eakon ga ugokimasen" (エアコンが動きません)</p>
+                            <p class="fr-phrase">→ "La climatisation ne marche pas"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Terebi ga tsukimasen" (テレビがつきません)</p>
+                            <p class="fr-phrase">→ "La télé ne s'allume pas"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Onyu ga demasen" (お湯が出ません)</p>
+                            <p class="fr-phrase">→ "Il n'y a pas d'eau chaude"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Taoru ga tarimasen" (タオルが足りません)</p>
+                            <p class="fr-phrase">→ "Il n'y a pas assez de serviettes"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Heya wo kaete kudasai" (部屋を変えてください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous changer ma chambre ?"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Services de l'hôtel</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Randorii saabisu wa arimasu ka?" (ランドリーサービスはありますか？)</p>
+                            <p class="fr-phrase">→ "Y a-t-il un service de blanchisserie ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Koinkuruushi wa doko desu ka?" (コインロッカーはどこですか？)</p>
+                            <p class="fr-phrase">→ "Où sont les consignes ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Nimotsu wo azukatte kudasai" (荷物を預かってください)</p>
+                            <p class="fr-phrase">→ "Pouvez-vous garder mes bagages ?"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Ruumu saabisu wo onegaishimasu" (ルームサービスをお願いします)</p>
+                            <p class="fr-phrase">→ "Je voudrais le room service"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Extensions et modifications</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Mou ippaku tomaritai desu" (もう一泊泊まりたいです)</p>
+                            <p class="fr-phrase">→ "Je voudrais rester une nuit de plus"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yoyaku wo henkou shitai desu" (予約を変更したいです)</p>
+                            <p class="fr-phrase">→ "Je voudrais modifier ma réservation"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Yoyaku wo kyanseru shitai desu" (予約をキャンセルしたいです)</p>
+                            <p class="fr-phrase">→ "Je voudrais annuler ma réservation"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Check-out</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Chekku-auto wo onegaishimasu" (チェックアウトをお願いします)</p>
+                            <p class="fr-phrase">→ "Je voudrais faire le check-out"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kagi wo kaeishimasu" (鍵を返します)</p>
+                            <p class="fr-phrase">→ "Je rends la clé"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Seikyuusho wo kudasai" (請求書をください)</p>
+                            <p class="fr-phrase">→ "La facture s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kurejitto kaado de haraimasu" (クレジットカードで払います)</p>
+                            <p class="fr-phrase">→ "Je paye par carte de crédit"</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Politesse et remerciements</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Osewa ni narimashita" (お世話になりました)</p>
+                            <p class="fr-phrase">→ "Merci pour votre aide" (formule de politesse en partant)</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Arigatou gozaimashita" (ありがとうございました)</p>
+                            <p class="fr-phrase">→ "Merci beaucoup"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Sumimasen ga..." (すみませんが...)</p>
+                            <p class="fr-phrase">→ "Excusez-moi, mais..." (pour introduire une demande)</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h3>Urgences</h3>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Byouki desu" (病気です)</p>
+                            <p class="fr-phrase">→ "Je suis malade"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Isha wo yonde kudasai" (医者を呼んでください)</p>
+                            <p class="fr-phrase">→ "Appelez un médecin s'il vous plaît"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Kinkyu desu" (緊急です)</p>
+                            <p class="fr-phrase">→ "C'est urgent"</p>
+                        </div>
+                        <div class="phrase">
+                            <p class="jp-phrase">"Tasukete kudasai" (助けてください)</p>
+                            <p class="fr-phrase">→ "Aidez-moi s'il vous plaît"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="advice">
+                        <p><strong>Astuce :</strong> Dans les hôtels japonais, le service est généralement excellent. N'hésite pas à demander de l'aide - ils sont très habitués aux touristes étrangers !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="../script.js"></script>
+</body>
+</html> 
